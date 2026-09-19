@@ -1,0 +1,14 @@
+# datos de origen (no se publican)
+Listado muestras ADN (final).xlsx
+*.xlsx
+~$*
+._*
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# dependencias / temporales
+node_modules/
+*.log
+tools/shot_*.png

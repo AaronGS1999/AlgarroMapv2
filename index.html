@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>AlgarroMap</title>
+  <meta name="description" content="Mapa de las localizaciones de los árboles de algarrobo muestreados en el proyecto de secuenciación.">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="vendor/MarkerCluster.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="map" aria-label="Mapa de árboles"></div>
+
+  <header class="panel brand" id="brand">
+    <h1>AlgarroMap</h1>
+    <p class="tagline" data-i18n="tagline">Localización de los algarrobos muestreados</p>
+    <p class="stats" id="stats"></p>
+  </header>
+
+  <div class="topright">
+    <div class="seg" id="lang" role="group" aria-label="Idioma">
+      <button data-lang="es" class="on">ES</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <div class="seg" id="basemap" role="group" aria-label="Mapa base">
+      <button data-base="light" class="on" data-i18n="base_light">Claro</button>
+      <button data-base="sat" data-i18n="base_sat">Satélite</button>
+    </div>
+  </div>
+
+  <button class="panel toggle-filters" id="toggleFilters" aria-expanded="true">
+    <span data-i18n="filters">Filtros</span>
+  </button>
+
+  <aside class="panel controls" id="controls">
+    <div class="field">
+      <input type="search" id="search" autocomplete="off" data-i18n-ph="search_ph" placeholder="Buscar por nombre o código…">
+    </div>
+
+    <div class="group">
+      <div class="group-head">
+        <span data-i18n="f_country">País / región</span>
+        <button class="link" data-clear="country" data-i18n="all">Todos</button>
+      </div>
+      <div class="options" id="fCountry"></div>
+    </div>
+
+    <div class="group">
+      <div class="group-head">
+        <span data-i18n="f_bank">Banco</span>
+        <button class="link" data-clear="bank" data-i18n="all">Todos</button>
+      </div>
+      <div class="options" id="fBank"></div>
+    </div>
+
+    <div class="legend">
+      <div class="lg"><span class="dot exact"></span><span data-i18n="lg_exact">Coordenada exacta (GPS)</span></div>
+      <div class="lg"><span class="dot approx"></span><span data-i18n="lg_approx">Ubicación aproximada (región)</span></div>
+      <p class="note" data-i18n="lg_note">Los puntos aproximados se sitúan en su región de origen y se separan para no solaparse; su posición es indicativa.</p>
+    </div>
+  </aside>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="vendor/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
