@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="vendor/leaflet.css">
   <link rel="stylesheet" href="vendor/MarkerCluster.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="iconos/Algarrobo_color.png" type="image/png">
 </head>
 <body>
   <div id="map" aria-label="Mapa de árboles"></div>
@@ -17,6 +17,20 @@
     <h1>AlgarroMap</h1>
     <p class="tagline" data-i18n="tagline">Localización de los algarrobos muestreados</p>
     <p class="stats" id="stats"></p>
+    <div class="actions">
+      <button id="toggleFilters" class="act" aria-expanded="true" aria-controls="controls">
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M3 5h18l-7 8v6l-4 2v-8z"/></svg>
+        <span data-i18n="filters">Filtros</span>
+      </button>
+      <a id="repoLink" class="act" href="https://github.com/AaronGS1999/AlgarroMapv2" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a id="hits" class="hits" href="https://hits.sh/aarongs1999.github.io/AlgarroMapv2/" target="_blank" rel="noopener" title="Visitas">
+        <img alt="Visitas" src="https://hits.sh/aarongs1999.github.io/AlgarroMapv2.svg?style=flat-square&label=visitas&color=2f7d5f&labelColor=3a3a3c"
+             onerror="this.closest('.hits').style.display='none'">
+      </a>
+    </div>
   </header>
 
   <div class="topright">
@@ -24,15 +38,7 @@
       <button data-lang="es" class="on">ES</button>
       <button data-lang="en">EN</button>
     </div>
-    <div class="seg" id="basemap" role="group" aria-label="Mapa base">
-      <button data-base="light" class="on" data-i18n="base_light">Claro</button>
-      <button data-base="sat" data-i18n="base_sat">Satélite</button>
-    </div>
   </div>
-
-  <button class="panel toggle-filters" id="toggleFilters" aria-expanded="true">
-    <span data-i18n="filters">Filtros</span>
-  </button>
 
   <aside class="panel controls" id="controls">
     <div class="field">
@@ -57,10 +63,18 @@
 
     <div class="legend">
       <div class="lg"><span class="dot exact"></span><span data-i18n="lg_exact">Coordenada exacta (GPS)</span></div>
-      <div class="lg"><span class="dot approx"></span><span data-i18n="lg_approx">Ubicación aproximada (región)</span></div>
-      <p class="note" data-i18n="lg_note">Los puntos aproximados se sitúan en su región de origen y se separan para no solaparse; su posición es indicativa.</p>
+      <div class="lg"><span class="dot approx"></span><span data-i18n="lg_approx">Ubicación aproximada</span></div>
+      <p class="note" data-i18n="lg_note">Posición indicativa: centroide de la región de origen.</p>
     </div>
   </aside>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Cerrar">&times;</button>
+    <figure class="lb-fig" id="lbFig">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
 
   <script src="vendor/leaflet.js"></script>
   <script src="vendor/leaflet.markercluster.js"></script>

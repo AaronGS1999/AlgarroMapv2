@@ -1,146 +1,116 @@
 # -*- coding: utf-8 -*-
 """Curado y estandarizacion de coordenadas de las muestras de algarrobo.
-Lee el Excel maestro y produce data/arboles.json + data/arboles.csv en WGS84 decimal."""
-import openpyxl, re, json, csv, math, unicodedata, io
+Lee el Excel maestro y produce data/arboles.json + data/arboles.csv en WGS84 decimal.
+Tambien enlaza cada arbol de Almeria con su ficha (carpeta Fichas)."""
+import openpyxl, re, json, csv, unicodedata, os
 
-import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 XLSX = os.path.join(HERE, "..", "Listado muestras ADN (final).xlsx")
 OUT = os.path.join(HERE, "..", "data")
 wb = openpyxl.load_workbook(XLSX, data_only=True)
 
-corrections = []   # log de correcciones
-warnings = []
+corrections, warnings = [], []
 
 def norm_code(v):
     if v is None: return None
     s = str(v).strip()
     if not s: return None
-    su = s.upper()
-    if su.startswith("CS"): s = s[2:].strip()
-    try:
-        return f"{int(float(s)):03d}"
-    except Exception:
-        return s
+    if s.upper().startswith("CS"): s = s[2:].strip()
+    try: return f"{int(float(s)):03d}"
+    except Exception: return s
 
 def strip_accents(s):
     if s is None: return ""
     return "".join(c for c in unicodedata.normalize("NFD", str(s)) if unicodedata.category(c) != "Mn")
 
-# ---------- parsers de coordenadas ----------
-def to_num(tok):
-    return float(tok.replace(",", "."))
+def key(s):
+    return re.sub(r"[^a-z0-9]", "", strip_accents(s).lower())
+
+# ---------- parsers ----------
+def to_num(t): return float(t.replace(",", "."))
 
 def parse_decimal_pair(s):
-    """'36.93, -1.99' admitiendo coma decimal y basura final. Devuelve (lat, lon)."""
     nums = re.findall(r"[-+]?\d+(?:[.,]\d+)?", s)
-    if len(nums) < 2:
-        return None
-    lat = to_num(nums[0]); lon = to_num(nums[1])
-    return lat, lon
+    if len(nums) < 2: return None
+    return to_num(nums[0]), to_num(nums[1])
 
 def parse_dms_token(tok, default_dir):
-    """Convierte un token DMS suelto a grados decimales. Tolerante con simbolos raros."""
     if tok is None: return None
-    t = str(tok)
-    t = (t.replace("◦", "°").replace("º", "°")
-           .replace("′", "'").replace("’", "'").replace("‘", "'")
-           .replace("″", '"').replace("”", '"').replace("''", '"').replace("’’", '"'))
+    t = (str(tok).replace("◦", "°").replace("º", "°")
+         .replace("′", "'").replace("’", "'").replace("‘", "'")
+         .replace("″", '"').replace("”", '"').replace("''", '"').replace("’’", '"'))
     d = default_dir
     m = re.search(r"[NSEWnsew]", t)
-    if m:
-        d = m.group(0).upper()
-    t2 = re.sub(r"(?<=\d)\s+(?=\d)", "", t)          # une "3. 174" -> "3.174"
-    t2 = t2.replace(",", ".")
+    if m: d = m.group(0).upper()
+    t2 = re.sub(r"(?<=\d)\s+(?=\d)", "", t).replace(",", ".")
     parts = re.findall(r"\d+(?:\.\d+)?", t2)
-    if not parts:
-        return None
-    deg = float(parts[0]); minu = float(parts[1]) if len(parts) > 1 else 0.0
-    sec = float(parts[2]) if len(parts) > 2 else 0.0
-    val = deg + minu/60.0 + sec/3600.0
-    if d in ("S", "W"):
-        val = -val
-    return val
+    if not parts: return None
+    val = float(parts[0]) + (float(parts[1])/60 if len(parts) > 1 else 0) + (float(parts[2])/3600 if len(parts) > 2 else 0)
+    return -val if d in ("S", "W") else val
 
 def looks_dms(s):
-    return ("°" in s) or ("◦" in s) or ("º" in s) or ("'" in s) or ("′" in s) or ("’" in s)
+    return any(c in s for c in ["°", "◦", "º", "'", "′", "’"])
 
 def split_dms_pair(s):
-    """Parte una cadena tipo grados-minutos-segundos con N y W en (lat, lon)."""
     m = re.search(r"[NSns]", s)
-    if not m:
-        return None
-    i = m.end()
-    lat = parse_dms_token(s[:i], "N")
-    lon = parse_dms_token(s[i:], "W")
-    if lat is None or lon is None:
-        return None
-    return lat, lon
+    if not m: return None
+    lat = parse_dms_token(s[:m.end()], "N"); lon = parse_dms_token(s[m.end():], "W")
+    return (lat, lon) if (lat is not None and lon is not None) else None
 
-# ---------- 1) Banco Almeria: coordenadas de campo ----------
+# ---------- Almeria ----------
 alm = {}
-ws = wb["Banco Almería"]
-for r in list(ws.iter_rows(values_only=True))[1:]:
+for r in list(wb["Banco Almería"].iter_rows(values_only=True))[1:]:
     code = norm_code(r[12]); ubic = r[9]
-    if not code or ubic is None:
-        continue
+    if not code or ubic is None: continue
     s = str(ubic).strip()
-    if not s or strip_accents(s).lower() == "almeria":
-        continue
-    latlon = None
-    if looks_dms(s):
-        latlon = split_dms_pair(s)
-    if latlon is None:
-        latlon = parse_decimal_pair(s)
-    if latlon is None:
-        warnings.append(f"Almeria {code}: no se pudo interpretar '{s}'")
-        continue
-    lat, lon = latlon
+    if not s or strip_accents(s).lower() == "almeria": continue
+    ll = split_dms_pair(s) if looks_dms(s) else None
+    if ll is None: ll = parse_decimal_pair(s)
+    if ll is None:
+        warnings.append(f"Almeria {code}: no interpretable '{s}'"); continue
+    lat, lon = ll
     if lon > 0:
-        corrections.append(f"{code} ('{s}'): longitud positiva corregida a negativa")
-        lon = -lon
+        corrections.append(f"{code} ('{s}'): longitud positiva -> negativa"); lon = -lon
     if not (36.0 <= lat <= 38.0 and -3.6 <= lon <= -1.5):
-        warnings.append(f"Almeria {code}: fuera de rango lat={lat:.5f} lon={lon:.5f} ('{s}')")
+        warnings.append(f"Almeria {code}: fuera de rango {lat:.5f},{lon:.5f}")
     alm[code] = (round(lat, 6), round(lon, 6))
 
-# ---------- 2) Marruecos ----------
+# ---------- Marruecos ----------
 hasna = {}
-ws = wb["Datos Marruecos Hasna"]
-for r in list(ws.iter_rows(values_only=True))[1:]:
+for r in list(wb["Datos Marruecos Hasna"].iter_rows(values_only=True))[1:]:
     if r[2] is None: continue
-    try: scode = int(float(str(r[2]).strip()))
+    try: sc = int(float(str(r[2]).strip()))
     except: continue
-    hasna[scode] = dict(cod=norm_code(r[7]), lat_raw=r[3], lon_raw=r[4], site=r[1], area=r[0])
+    hasna[sc] = dict(cod=norm_code(r[7]), lat=r[3], lon=r[4], site=r[1])
 
 mor = {}
-ws = wb["Marruecos_coord_correctas"]
-for r in list(ws.iter_rows(values_only=True))[1:]:
+for r in list(wb["Marruecos_coord_correctas"].iter_rows(values_only=True))[1:]:
     if r[2] is None: continue
-    try: scode = int(float(str(r[2]).strip()))
+    try: sc = int(float(str(r[2]).strip()))
     except: continue
     lat = parse_dms_token(r[5], "N"); lon = parse_dms_token(r[6], "W")
     if lat is None or lon is None:
-        warnings.append(f"Marruecos scode {scode}: DMS no interpretable"); continue
-    mor[scode] = (round(lat,6), round(lon,6), "Marruecos_coord_correctas")
+        warnings.append(f"Marruecos scode {sc}: DMS no interpretable"); continue
+    mor[sc] = (round(lat, 6), round(lon, 6), "Marruecos_coord_correctas")
 
-for scode, h in hasna.items():
-    if scode in mor: continue
-    lr, lonr = str(h["lat_raw"]), str(h["lon_raw"])
+for sc, h in hasna.items():
+    if sc in mor: continue
+    lr, lonr = str(h["lat"]), str(h["lon"])
     if "X=" in lr or "Y=" in lr or "X=" in lonr or "Y=" in lonr:
-        warnings.append(f"Marruecos scode {scode} ({h['site']}): solo UTM -> se ubicara por region"); continue
+        warnings.append(f"Marruecos scode {sc} ({h['site']}): solo UTM -> por region"); continue
     lat = parse_dms_token(lr, "N"); lon = parse_dms_token(lonr, "W")
     if lat is None or lon is None:
-        warnings.append(f"Marruecos scode {scode}: respaldo Hasna no interpretable"); continue
-    mor[scode] = (round(lat,6), round(lon,6), "Datos Marruecos Hasna (respaldo)")
+        warnings.append(f"Marruecos scode {sc}: respaldo no interpretable"); continue
+    mor[sc] = (round(lat, 6), round(lon, 6), "Datos Marruecos Hasna (respaldo)")
 
 mor_by_code = {}
-for scode, (lat, lon, src) in mor.items():
-    cod = hasna.get(scode, {}).get("cod") or f"{scode+515:03d}"
+for sc, (lat, lon, src) in mor.items():
+    cod = hasna.get(sc, {}).get("cod") or f"{sc+515:03d}"
     if not (27.0 <= lat <= 37.0 and -13.5 <= lon <= -1.0):
-        warnings.append(f"Marruecos {cod}: fuera de rango lat={lat:.4f} lon={lon:.4f}")
+        warnings.append(f"Marruecos {cod}: fuera de rango {lat:.4f},{lon:.4f}")
     mor_by_code[cod] = (lat, lon, src)
 
-# ---------- 3) Gaceteer aproximado ----------
+# ---------- gaceteer aproximado ----------
 LOCALITIES = {
     "tavira (colecao antiga)": (37.127, -7.650), "tavira": (37.127, -7.650),
     "benafim": (37.242, -8.060), "paderne": (37.160, -8.204),
@@ -184,16 +154,16 @@ COUNTRIES = {
     "isr": (31.5, 34.9), "aus": (-31.95, 115.86), "usa": (37.5, -120.0),
     "hrv": (45.1, 15.2), "cyp": (35.0, 33.2), "tur": (39.0, 35.0),
 }
-CAJAMAR_PALMERILLAS = (36.796, -2.720)
+CAJAMAR = (36.796, -2.720)
 
 def resolve_region(pais, prov, origen, banco):
     pl = strip_accents(pais).lower().strip() if pais else ""
     pv = strip_accents(prov).lower().strip() if prov else ""
     og = strip_accents(origen).lower().strip() if origen else ""
-    unknown_pv = (pv in ("", "none")) or ("?" in pv)
-    unknown_og = (og in ("", "none")) or ("?" in og)
-    if unknown_pv and unknown_og and banco == "CAJAMAR":
-        return CAJAMAR_PALMERILLAS, "Origen desconocido — conservado en CAJAMAR Las Palmerillas", "baja"
+    unk_pv = (pv in ("", "none")) or ("?" in pv)
+    unk_og = (og in ("", "none")) or ("?" in og)
+    if unk_pv and unk_og and banco == "CAJAMAR":
+        return CAJAMAR, "Origen desconocido — conservado en CAJAMAR Las Palmerillas", "baja"
     if og in LOCALITIES:
         return LOCALITIES[og], f"Localidad: {origen}", "media"
     if (pl, pv) in PROVINCES:
@@ -203,14 +173,39 @@ def resolve_region(pais, prov, origen, banco):
         return COUNTRIES[pl], f"País: {pais}", "baja"
     return None, None, None
 
-# ---------- 4) Ensamblar ----------
-ws = wb["Listado común "]
-rows = list(ws.iter_rows(values_only=True))
+# ---------- fichas (accesion -> imagen, del proyecto v1) ----------
+FICHAS_RAW = {
+    "El Alquian": "Alquian.png", "Bedar 1": "Bedar1.png", "Bedar 2": "Bedar2.png",
+    "Bedar 3": "Bedar3.png", "Belen 1": "Belen1.png", "Belen 2": "Belen2.png",
+    "Botanico 1": "Botanico1.png", "Botanico 2": "Botanico2.png", "Botanico 3": "Botanico3.png",
+    "Botanico 4": "Botanico4.png", "El algarrobico 1": "ElAlgarrobico1.png",
+    "El algarrobico 2": "ElAlgarrobico2.png", "El algarrobico 3": "ElAlgarrobico3.png",
+    "El de Cristobal": "ElDeCristobal.png", "El de Rafael": "ElDeRafael.png",
+    "Enmedio 1": "Enmedio1.png", "Enmedio 2": "Enmedio2.png", "Enmedio 3": "Enmedio3.png",
+    "Enmedio 4": "Enmedio4.png", "Enmedio 5": "Enmedio5.png", "Enmedio 6": "Enmedio6.png",
+    "MacenasGolf": "GolfI.png", "Isleta 1": "Isleta1.png", "Isleta 2": "Isleta2.png",
+    "La Serena 1": "LaSerena1.png", "La Serena 2": "LaSerena2.png",
+    "Las Negras 1": "LasNegras1.png", "Las Negras 2": "LasNegras2.png", "Las Negras 3": "LasNegras3.png",
+    "Las Niñas": "LasNinas.png", "Los Albacetes": "LosAlbacetes.png",
+    "Los Mañas 1": "LosManas1.png", "Los Mañas 2": "LosManas2.png",
+    "Lucainena 1": "Lucainena1.png", "Lucainena 2": "Lucainena2.png",
+    "Lucainena 3": "Lucainena3.png", "Lucainena 4": "Lucainena4.png",
+    "Marchalico 1": "Marchalico1.png", "Marchalico 2": "Marchalico2.png", "Marchalico 3": "Marchalico3.png",
+    "Mojacar": "Mojacar.png", "MojacarAlto1": "MojacarAlto1.png", "MojacarAlto2": "MojacarAlto2.png",
+    "MojacarAlto3": "MojacarAlto3.png", "MojacarAlto4": "MojacarAlto4.png",
+    "MojacarAlto5": "MojacarAlto5.png", "MojacarAlto6": "MojacarAlto6.png",
+    "Nijar": "Nijar.png", "Pileta 1": "Pileta1.png", "Pileta 2": "Pileta2.png",
+    "Plomo 1": "Plomo1.png", "Plomo 2": "Plomo2.png", "Plomo 3": "Plomo3.png",
+    "Rodalquilar": "Rodalquilar.png", "Rodena 1": "Rodena1.png", "Rodena 2": "Rodena2.png",
+    "UAL1": "Ual1.png", "UAL2": "Ual2.png", "UAL3": "Ual3.png", "UAL4": "Ual4.png",
+    "Vicar 1": "Vicar1.png", "Vicar 2": "Vicar2.png",
+}
+FICHAS = {key(k): v for k, v in FICHAS_RAW.items()}
 
+# ---------- ensamblar ----------
 def clean(v):
     if v is None: return None
-    s = str(v).strip()
-    return s if s else None
+    s = str(v).strip(); return s or None
 
 def norm_wild(v):
     s = strip_accents(v).lower() if v else ""
@@ -220,14 +215,13 @@ def norm_wild(v):
     if "actualmente no" in s: return "no cultivado actualmente"
     return "desconocido"
 
-trees = []; seen = set()
-for r in rows[1:]:
+trees, seen, used_fichas = [], set(), set()
+for r in list(wb["Listado común "].iter_rows(values_only=True))[1:]:
     code = norm_code(r[0])
     if not code or code in seen: continue
     seen.add(code)
-    nombre = clean(r[2]); sexo = clean(r[3]); banco = clean(r[4])
-    origen = clean(r[5]); prov = clean(r[6]); wild = clean(r[7]); pais = clean(r[8])
-    lat = lon = None; precision = None; source = None; region = None; conf = None
+    nombre = clean(r[2]); banco = clean(r[4]); origen = clean(r[5]); prov = clean(r[6]); pais = clean(r[8])
+    lat = lon = precision = source = region = conf = None
     if code in alm:
         lat, lon = alm[code]; precision = "exacta"; source = "Banco Almería (GPS de campo)"
     elif code in mor_by_code:
@@ -235,34 +229,36 @@ for r in rows[1:]:
     if lat is None:
         coords, region, conf = resolve_region(pais, prov, origen, banco)
         if coords:
-            lat, lon = coords; precision = "aproximada"
-            source = "Ubicación representativa de la región de origen"
-    trees.append(dict(id="Cs"+code, code=code, name=nombre, sex=sexo,
-               bank=banco, origin=origen, province=prov, country=pais,
-               wild=norm_wild(wild), wild_raw=wild,
-               lat=lat, lon=lon, precision=precision,
-               coord_source=source, region_label=region, confidence=conf))
+            lat, lon = coords; precision = "aproximada"; source = "Ubicación representativa de la región de origen"
+    ficha = FICHAS.get(key(nombre)) if nombre else None
+    if ficha: used_fichas.add(ficha)
+    trees.append(dict(id="Cs"+code, code=code, name=nombre, sex=clean(r[3]),
+        bank=banco, origin=origen, province=prov, country=pais,
+        wild=norm_wild(r[7]), wild_raw=clean(r[7]), lat=lat, lon=lon,
+        precision=precision, coord_source=source, region_label=region,
+        confidence=conf, ficha=ficha))
 
-
-# ---- salida ----
+# ---------- salida ----------
 import datetime
 def keyf(t):
     try: return (0, int(t["code"]))
     except: return (1, t["code"])
 trees.sort(key=keyf)
 os.makedirs(OUT, exist_ok=True)
-meta = dict(generated=datetime.date.today().isoformat(),
-            source="Listado muestras ADN (final).xlsx",
-            crs="WGS84 (EPSG:4326), grados decimales",
-            count=len(trees),
-            count_exact=sum(1 for t in trees if t["precision"]=="exacta"),
-            count_approx=sum(1 for t in trees if t["precision"]=="aproximada"))
+meta = dict(generated=datetime.date.today().isoformat(), source="Listado muestras ADN (final).xlsx",
+            crs="WGS84 (EPSG:4326), grados decimales", count=len(trees),
+            count_exact=sum(1 for t in trees if t["precision"] == "exacta"),
+            count_approx=sum(1 for t in trees if t["precision"] == "aproximada"),
+            count_fichas=sum(1 for t in trees if t["ficha"]))
 with open(os.path.join(OUT, "arboles.json"), "w", encoding="utf-8") as f:
     json.dump(dict(meta=meta, trees=trees), f, ensure_ascii=False, indent=1)
-cols = ["id","code","name","sex","bank","origin","province","country","wild","lat","lon","precision","coord_source","region_label","confidence"]
+cols = ["id","code","name","sex","bank","origin","province","country","wild","lat","lon","precision","coord_source","region_label","confidence","ficha"]
 with open(os.path.join(OUT, "arboles.csv"), "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader()
     for t in trees: w.writerow(t)
+
 print(f"{len(trees)} árboles  ({meta['count_exact']} exactas, {meta['count_approx']} aproximadas)")
+print(f"fichas enlazadas a {meta['count_fichas']} árboles; fichas usadas: {len(used_fichas)}/{len(FICHAS_RAW)}")
+miss = [v for v in FICHAS_RAW.values() if v not in used_fichas]
+if miss: print("fichas SIN emparejar:", miss)
 print("correcciones:", len(corrections), "| avisos:", len(warnings))
-print("-> data/arboles.json, data/arboles.csv")

@@ -1,4 +1,4 @@
-import subprocess, time, os, sys, json
+import subprocess, time, os, sys
 from playwright.sync_api import sync_playwright
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -14,74 +14,81 @@ try:
         pg = br.new_page(viewport={"width": 1280, "height": 820}, device_scale_factor=2)
         pg.on("console", lambda m: console.append((m.type, m.text)))
         pg.on("pageerror", lambda e: errors.append(str(e)))
-        # bloquear tiles externos para que la prueba sea rápida y estable
-        pg.route("**/*", lambda route: route.abort()
-                 if any(h in route.request.url for h in ["basemaps.cartocdn", "arcgisonline"])
-                 else route.continue_())
+        def route_handler(route):
+            u = route.request.url
+            if "open-meteo" in u:
+                route.fulfill(status=200, content_type="application/json",
+                    body='{"daily":{"time":["2020-01-01","2020-01-02"],"temperature_2m_mean":[10,20],"precipitation_sum":[3,3]}}')
+            elif any(h in u for h in ["arcgisonline", "cartocdn", "hits.sh"]):
+                route.abort()
+            else:
+                route.continue_()
+        pg.route("**/*", route_handler)
         pg.goto(base, wait_until="load", timeout=20000)
         pg.wait_for_selector(".tree-marker, .cl", timeout=10000)
         time.sleep(1.0)
 
-        stats = pg.inner_text("#stats")
-        markers = pg.eval_on_selector_all(".tree-marker", "els => els.length")
-        clusters = pg.eval_on_selector_all(".cl", "els => els.length")
-        country_chips = pg.eval_on_selector_all("#fCountry .chip", "els => els.length")
-        bank_chips = pg.eval_on_selector_all("#fBank .chip", "els => els.length")
-        print("STATS inicial:", stats)
-        print("marcadores visibles:", markers, "| clústeres:", clusters)
-        print("chips país:", country_chips, "| chips banco:", bank_chips)
-        pg.screenshot(path="tools/shot_desktop_light.png")
+        print("STATS:", pg.inner_text("#stats"))
+        print("marcadores:", pg.eval_on_selector_all(".tree-marker", "e=>e.length"),
+              "clústeres:", pg.eval_on_selector_all(".cl", "e=>e.length"))
+        print("chips país:", pg.eval_on_selector_all("#fCountry .chip", "e=>e.length"),
+              "chips banco:", pg.eval_on_selector_all("#fBank .chip", "e=>e.length"))
+        pg.screenshot(path="tools/shot_desktop.png")
 
-        # jitter: la función spread debe separar los puntos co-localizados
-        jit = pg.evaluate("""async () => {
+        # fichas: popup y visor
+        info = pg.evaluate("""async () => {
           const d = await (await fetch('data/arboles.json')).json();
-          const g = d.trees.filter(t => t.precision==='aproximada' && Math.abs(t.lat-39.62)<0.001 && Math.abs(t.lon-2.99)<0.001);
-          window.spread(g);
-          const uniq = new Set(g.map(t=>t._lat.toFixed(6)+','+t._lon.toFixed(6)));
-          return {n:g.length, uniq:uniq.size};
+          const ex = d.trees.find(t => t.id==='Cs073');       // Plomo 1, con ficha
+          const nof = d.trees.find(t => !t.ficha && t.precision==='exacta');
+          const withFicha = d.trees.filter(t=>t.ficha).length;
+          return {
+            popExact: window.popup(ex),
+            popNoF: window.popup(nof),
+            withFicha
+          };
         }""")
-        print("jitter Mallorca:", jit)
+        print("árboles con ficha:", info["withFicha"])
+        print("popup(Plomo1) tiene botón ficha:", "ficha-btn" in info["popExact"], "| data-ficha Plomo1.png:", "Plomo1.png" in info["popExact"])
+        print("popup(sin ficha) sin botón:", "ficha-btn" not in info["popNoF"])
+        lb = pg.evaluate("""() => { window.openFicha('Plomo1.png','Plomo 1 · Cs073');
+          const l=document.getElementById('lightbox');
+          return {hidden:l.hidden, src:document.getElementById('lbImg').src, cap:document.getElementById('lbCap').textContent}; }""")
+        print("visor abierto:", (not lb["hidden"]), "| src correcto:", lb["src"].endswith("Fichas/Plomo1.png"), "| cap:", lb["cap"])
+        pg.keyboard.press("Escape")
+        print("visor cerrado tras Esc:", pg.eval_on_selector("#lightbox", "e=>e.hidden"))
 
-        # popup (usa la función global) en ES y EN
-        pop = pg.evaluate("""async () => {
+        # clima (normales) con respuesta simulada
+        cl = pg.evaluate("""async () => {
+          const c = await window.getClima(36.93, -1.99);
           const d = await (await fetch('data/arboles.json')).json();
-          const ex = d.trees.find(t=>t.id==='Cs073');
-          const ap = d.trees.find(t=>t.precision==='aproximada' && t.country==='ITA');
-          return {ex: window.popup(ex), ap: window.popup(ap)};
+          return { t: c.t, p: c.p, popHasClima: window.popup(d.trees[0]).includes('class="clima"') };
         }""")
-        print("popup exacta contiene badge exacta:", "Exacta" in pop["ex"], "| Csid:", "Cs073" in pop["ex"])
-        print("popup aprox contiene badge aprox:", "Aproximada" in pop["ap"])
+        print("clima t:", cl["t"], "| p>0:", cl["p"] > 0, "| popup incluye clima:", cl["popHasClima"])
 
-        # filtro: seleccionar el primer chip de país y ver que cambia el recuento
-        pg.click("#fCountry .chip:first-child")
-        time.sleep(0.4)
-        print("STATS tras filtrar 1 país:", pg.inner_text("#stats"))
-        pg.click('[data-clear="country"]')
-        time.sleep(0.3)
+        # filtro país
+        pg.click("#fCountry .chip:first-child"); time.sleep(0.3)
+        print("STATS tras 1 país:", pg.inner_text("#stats"))
+        pg.click('[data-clear="country"]'); time.sleep(0.2)
 
-        # idioma EN
-        pg.click('#lang button[data-lang="en"]')
-        time.sleep(0.4)
-        print("STATS en EN:", pg.inner_text("#stats"))
-        print("tagline EN:", pg.inner_text(".tagline"))
-        pg.screenshot(path="tools/shot_desktop_en.png")
+        # idioma
+        pg.click('#lang button[data-lang="en"]'); time.sleep(0.3)
+        print("STATS EN:", pg.inner_text("#stats"))
+        pg.click('#lang button[data-lang="es"]')
 
         # búsqueda
-        pg.click('#lang button[data-lang="es"]')
-        pg.fill("#search", "Plomo")
-        time.sleep(0.4)
-        print("STATS buscando 'Plomo':", pg.inner_text("#stats"))
+        pg.fill("#search", "Bédar"); time.sleep(0.3)
+        print("STATS 'Bédar':", pg.inner_text("#stats"))
         pg.fill("#search", "")
 
-        # móvil
-        pg2 = br.new_page(viewport={"width": 390, "height": 780}, device_scale_factor=2)
-        pg2.goto(base, wait_until="load", timeout=20000)
-        pg2.wait_for_selector(".tree-marker, .cl", timeout=10000)
-        time.sleep(0.8)
-        pg2.screenshot(path="tools/shot_mobile.png")
+        # toggle de filtros
+        open1 = pg.eval_on_selector("#controls", "e=>e.classList.contains('open')")
+        pg.click("#toggleFilters"); time.sleep(0.2)
+        open2 = pg.eval_on_selector("#controls", "e=>e.classList.contains('open')")
+        print("toggle filtros:", open1, "->", open2)
+
         br.close()
     print("\nERRORES JS:", errors if errors else "ninguno")
-    real_console_errors = [c for c in console if c[0] == "error" and "ERR_" not in c[1] and "tile" not in c[1].lower()]
-    print("CONSOLA (errores no-red):", real_console_errors if real_console_errors else "ninguno")
+    real = [c for c in console if c[0] == "error" and "ERR_" not in c[1] and "hits" not in c[1].lower()]
+    print("CONSOLA (errores no-red):", real if real else "ninguno")
 finally:
     srv.terminate()

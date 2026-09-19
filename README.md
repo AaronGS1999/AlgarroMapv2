@@ -1,45 +1,39 @@
-# AlgarroMap
+# AlgarroMap: Mapa Interactivo
 
-Mapa web de las localizaciones de los algarrobos (*Ceratonia siliqua*) muestreados en el proyecto de secuenciación. Aplicación estática, sin dependencias de servidor, pensada para publicarse en GitHub Pages.
+[![Mantenido por Aaron Gálvez Salido](https://img.shields.io/badge/Mantenido%20por-Aaron%20G%C3%A1lvez%20Salido-blue)](mailto:ags408@ual.es) [![AlgarroMap](https://img.shields.io/badge/Web-AlgarroMap-orange)](https://aarongs1999.github.io/AlgarroMapv2/)
 
-*Web map of the sampled carob trees for the sequencing project. Static site, ready for GitHub Pages. Bilingual ES/EN.*
+Este repositorio contiene el mapa interactivo **AlgarroMap**, que muestra la localización de los árboles de algarrobo (*Ceratonia siliqua*) muestreados en el proyecto de secuenciación. Es una aplicación web estática, sin servidor, publicada en GitHub Pages.
 
-## Publicar en GitHub Pages
+## Descripción del Proyecto
 
-1. Crea un repositorio en GitHub y sube el contenido de esta carpeta (el Excel de origen queda excluido por `.gitignore`).
-2. En el repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-3. La web queda en `https://<usuario>.github.io/<repo>/`.
+AlgarroMap tiene como objetivo situar en un mapa los algarrobos muestreados por el grupo de investigación **BIO-359: Genómica Evolutiva de Plantas (PlantEVOLGEN)**, cuyo director es **Lorenzo Carretero Paulet**. Esta versión recoge todas las muestras del listado (España, Marruecos, Portugal y otros orígenes), distinguiendo entre los árboles con **coordenadas de campo exactas** (Almería y Marruecos) y las **accesiones de colección**, de las que solo se conoce la región de origen y que se sitúan en un punto representativo de esa región.
 
-## Ver en local
+## Uso del mapa
 
-Al leer los datos con `fetch`, hace falta servir la carpeta por HTTP (abrir `index.html` con doble clic no basta):
+* **Buscar y filtrar**: por nombre o código, y por país/región o banco de procedencia.
+* **Puntos**: en verde los de coordenada exacta (GPS) y en ámbar los de ubicación aproximada.
+* **Fichas**: los árboles de Almería que tienen ficha muestran un botón para abrirla al pulsar el punto.
+* **Idioma**: interfaz en español o inglés.
+* Arriba a la izquierda hay un acceso directo a este repositorio de GitHub.
 
-```bash
-python3 -m http.server 8000
-# y abre http://localhost:8000
-```
+## Mantenimiento y Contacto
 
-## Estructura
+* **Aaron Gálvez Salido**
+    * Estudiante de Doctorado
+    * Grupo de investigación: **BIO-359: Genómica Evolutiva de Plantas (PlantEVOLGEN)**
+    * Correo de contacto: [ags408@ual.es](mailto:ags408@ual.es)
 
-```
-index.html          página principal
-styles.css          estilo (modo claro/oscuro automático)
-app.js              lógica: carga de datos, mapa, filtros, búsqueda
-data/arboles.json   datos que lee la web (fuente de verdad)
-data/arboles.csv    los mismos datos en CSV
-vendor/             Leaflet 1.9.4 + MarkerCluster (incluidos, sin CDN)
-NOTAS_DATOS.md      cómo se han curado las coordenadas
-```
+## Contenido del Repositorio
 
-## Datos
+* **`data/arboles.json`**: datos que lee la web (fuente de verdad), con la información de cada árbol y su coordenada en WGS84.
+* **`data/arboles.csv`**: los mismos datos en formato CSV.
+* **`Fichas/`**: fichas con información detallada de los individuos muestreados en Almería.
+* **`index.html`, `styles.css`, `app.js`**: la aplicación web (mapa, filtros, búsqueda y fichas), basada en la librería [Leaflet](https://leafletjs.com).
+* **`vendor/`**: Leaflet y Leaflet.markercluster incluidos en el repositorio (sin depender de CDNs externos).
+* **`tools/build_data.py`**: script que regenera y estandariza los datos a partir del Excel de muestreo.
 
-Cada árbol lleva: identificador `Csxxx`, nombre, sexo, banco de procedencia, origen/provincia, país, tipo (silvestre/cultivado), coordenada en WGS84 (grados decimales) y su **precisión**:
+**Cartografía base**: imágenes de satélite de Esri World Imagery, con etiquetas de lugares.
 
-- **exacta** — GPS de campo (Almería) o coordenadas de Marruecos.
-- **aproximada** — accesión de colección de la que solo se conoce la región de origen; se ubica en un punto representativo de esa región.
+## Agradecimientos
 
-Para regenerar los datos desde el Excel, ver `NOTAS_DATOS.md`.
-
-## Créditos
-
-Cartografía base: © OpenStreetMap, © CARTO y Esri World Imagery. Librería de mapa: [Leaflet](https://leafletjs.com) y [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster).
+Este trabajo fue financiado por la ayuda PID2023-146207OB-I00 del Ministerio de Ciencia, Innovación y Universidades (MCIU), la Agencia Estatal de Investigación (AEI) / 10.13039/501100011033 y el Fondo Social Europeo Plus (FSE+), a través del proyecto "El modelo agrícola de Almería ante el cambio global. Propuestas desde la genómica de la agrobiodiversidad" (OrphanEvolGen).

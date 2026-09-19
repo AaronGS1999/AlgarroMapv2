@@ -1,0 +1,360 @@
+id,code,name,sex,bank,origin,province,country,wild,lat,lon,precision,coord_source,region_label,confidence
+Cs001,001,UAL1,Hembra,Almería,Almería,Almería,ESP,cultivado,36.830149,-2.402105,exacta,Banco Almería (GPS de campo),,
+Cs002,002,UAL2,Macho,Almería,Almería,Almería,ESP,cultivado,36.83041,-2.402035,exacta,Banco Almería (GPS de campo),,
+Cs003,003,Ubedas,Hembra,Almería,Almería,Almería,ESP,desconocido,36.926222,-2.2985,exacta,Banco Almería (GPS de campo),,
+Cs004,004,Rodalquilar,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,36.84873,-2.043119,exacta,Banco Almería (GPS de campo),,
+Cs005,005,Botánico 4,Hembra,Almería,Almería,Almería,ESP,cultivado,36.849528,-2.041833,exacta,Banco Almería (GPS de campo),,
+Cs006,006,Las Niñas,Hembra,Almería,Almería,Almería,ESP,silvestre,36.8421,-2.048049,exacta,Banco Almería (GPS de campo),,
+Cs007,007,Botánico 3,Macho,Almería,Almería,Almería,ESP,cultivado,36.849389,-2.041056,exacta,Banco Almería (GPS de campo),,
+Cs008,008,Vicar 1,Macho,Almería,Almería,Almería,ESP,cultivado,36.819944,-2.652833,exacta,Banco Almería (GPS de campo),,
+Cs009,009,Vicar 2,Hembra,Almería,Almería,Almería,ESP,cultivado,36.821936,-2.653143,exacta,Banco Almería (GPS de campo),,
+Cs010,010,Isleta 2,Hembra,Almería,Almería,Almería,ESP,cultivado,36.815016,-2.05326,exacta,Banco Almería (GPS de campo),,
+Cs011,011,Las Negras 3,Hembra,Almería,Almería,Almería,ESP,desconocido,36.885694,-2.004472,exacta,Banco Almería (GPS de campo),,
+Cs012,012,Isleta 1,Hembra,Almería,Almería,Almería,ESP,cultivado,36.816951,-2.053419,exacta,Banco Almería (GPS de campo),,
+Cs013,013,Vicar 1,Hembra,Almería,Almería,Almería,ESP,cultivado,36.819944,-2.652833,exacta,Banco Almería (GPS de campo),,
+Cs014,014,Las Negras 1,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,36.883749,-2.003916,exacta,Banco Almería (GPS de campo),,
+Cs015,015,Botánico 1,Hemafrodita,Almería,Almería,Almería,ESP,cultivado,36.849833,-2.042278,exacta,Banco Almería (GPS de campo),,
+Cs016,016,Botánico 2,Hemafrodita,Almería,Almería,Almería,ESP,cultivado,36.849626,-2.042106,exacta,Banco Almería (GPS de campo),,
+Cs017,017,Los Albacetes,Macho,Almería,Almería,Almería,ESP,cultivado,36.848475,-2.03142,exacta,Banco Almería (GPS de campo),,
+Cs018,018,Las Negras 1,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,36.883749,-2.003916,exacta,Banco Almería (GPS de campo),,
+Cs019,019,Las Negras 2,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,36.885361,-2.004861,exacta,Banco Almería (GPS de campo),,
+Cs020,020,Las Negras 3,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,36.885694,-2.004472,exacta,Banco Almería (GPS de campo),,
+Cs021,021,Bédar 2,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.190306,-1.985694,exacta,Banco Almería (GPS de campo),,
+Cs022,022,Bédar 2,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.190306,-1.985694,exacta,Banco Almería (GPS de campo),,
+Cs023,023,Bédar 1,Macho,Almería,Almería,Almería,ESP,cultivado,37.175111,-1.958111,exacta,Banco Almería (GPS de campo),,
+Cs024,024,El Alquian,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,36.8515,-2.346278,exacta,Banco Almería (GPS de campo),,
+Cs025,025,La Serena 2,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.175825,-1.987455,exacta,Banco Almería (GPS de campo),,
+Cs026,026,Bédar 3,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.190306,-1.985694,exacta,Banco Almería (GPS de campo),,
+Cs027,027,La Serena 2,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.175825,-1.987455,exacta,Banco Almería (GPS de campo),,
+Cs028,028,La Serena 1,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.175424,-1.987404,exacta,Banco Almería (GPS de campo),,
+Cs029,029,UAL3,Hembra,Almería,Almería,Almería,ESP,cultivado,36.830028,-2.406111,exacta,Banco Almería (GPS de campo),,
+Cs030,030,UAL4,Macho,Almería,Almería,Almería,ESP,cultivado,36.83025,-2.40575,exacta,Banco Almería (GPS de campo),,
+Cs031,031,MojacarAlto1,¿?,Almería,Almería,Almería,ESP,silvestre,37.108675,-1.854027,exacta,Banco Almería (GPS de campo),,
+Cs032,032,Mojacar,Macho,Almería,Almería,Almería,ESP,cultivado,37.139056,-1.853472,exacta,Banco Almería (GPS de campo),,
+Cs033,033,Plomo 2,Macho,Almería,Almería,Almería,ESP,cultivado,36.930463,-1.991669,exacta,Banco Almería (GPS de campo),,
+Cs034,034,Plomo 3,Hembra,Almería,Almería,Almería,ESP,cultivado,36.930819,-1.989421,exacta,Banco Almería (GPS de campo),,
+Cs035,035,Pileta 1,Hembra/Hemafodita,Almería,Almería,Almería,ESP,no cultivado actualmente,37.161924,-2.076352,exacta,Banco Almería (GPS de campo),,
+Cs036,036,Pileta 2,Hembra/Hemafodita,Almería,Almería,Almería,ESP,no cultivado actualmente,37.161635,-2.074518,exacta,Banco Almería (GPS de campo),,
+Cs037,037,Belén 1,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,36.85825,-2.481333,exacta,Banco Almería (GPS de campo),,
+Cs038,038,Belén 2,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,36.858083,-2.480861,exacta,Banco Almería (GPS de campo),,
+Cs039,039,El de Cristóbal,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.011917,-2.756583,exacta,Banco Almería (GPS de campo),,
+Cs040,040,El de Rafael,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.016746,-2.749151,exacta,Banco Almería (GPS de campo),,
+Cs041,041,Marchalico 1,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.106139,-2.0425,exacta,Banco Almería (GPS de campo),,
+Cs042,042,Marchalico 1,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.106139,-2.0425,exacta,Banco Almería (GPS de campo),,
+Cs043,043,Marchalico 2,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.10582,-2.043416,exacta,Banco Almería (GPS de campo),,
+Cs044,044,Marchalico 3,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.105732,-2.043455,exacta,Banco Almería (GPS de campo),,
+Cs045,045,Los Mañas 1,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.150773,-2.084554,exacta,Banco Almería (GPS de campo),,
+Cs046,046,Los Mañas 1,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.150773,-2.084554,exacta,Banco Almería (GPS de campo),,
+Cs047,047,Los Mañas 2,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.15113,-2.085525,exacta,Banco Almería (GPS de campo),,
+Cs048,048,Los Mañas 2,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.15113,-2.085525,exacta,Banco Almería (GPS de campo),,
+Cs049,049,Lucainena 1,Hembra,Almería,Almería,Almería,ESP,silvestre,37.038763,-2.200419,exacta,Banco Almería (GPS de campo),,
+Cs050,050,Lucainena 2,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.038879,-2.200092,exacta,Banco Almería (GPS de campo),,
+Cs051,051,Lucainena 3,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.03675,-2.1945,exacta,Banco Almería (GPS de campo),,
+Cs052,052,Lucainena 4,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.03693,-2.19439,exacta,Banco Almería (GPS de campo),,
+Cs053,053,Enmedio 1,Macho,Almería,Almería,Almería,ESP,no cultivado actualmente,37.072297,-1.861735,exacta,Banco Almería (GPS de campo),,
+Cs054,054,Enmedio 2,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.072006,-1.863101,exacta,Banco Almería (GPS de campo),,
+Cs055,055,Enmedio 3,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.07122,-1.861675,exacta,Banco Almería (GPS de campo),,
+Cs056,056,Enmedio 4,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.070655,-1.865163,exacta,Banco Almería (GPS de campo),,
+Cs057,057,Enmedio 5,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.071429,-1.866478,exacta,Banco Almería (GPS de campo),,
+Cs058,058,Enmedio 6,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.072025,-1.86694,exacta,Banco Almería (GPS de campo),,
+Cs059,059,MacenasGolf,Hembra,Almería,Almería,Almería,ESP,no cultivado actualmente,37.073493,-1.860221,exacta,Banco Almería (GPS de campo),,
+Cs060,060,Matias,_,Almería,Almería,Almería,ESP,desconocido,37.1,-2.35,aproximada,Ubicación representativa de la región de origen,Región: Almería (Almería),media
+Cs061,061,MojacarAlto2,Hembra,Almería,Almería,Almería,ESP,silvestre,37.106861,-1.849417,exacta,Banco Almería (GPS de campo),,
+Cs062,062,MojacarAlto3,Machos,Almería,Almería,Almería,ESP,silvestre,37.109194,-1.854056,exacta,Banco Almería (GPS de campo),,
+Cs063,063,MojacarAlto4,Hembra,Almería,Almería,Almería,ESP,silvestre,37.109417,-1.853917,exacta,Banco Almería (GPS de campo),,
+Cs064,064,MojacarAlto5,Macho,Almería,Almería,Almería,ESP,silvestre,37.108222,-1.855194,exacta,Banco Almería (GPS de campo),,
+Cs065,065,MojacarAlto6,Hembra,Almería,Almería,Almería,ESP,silvestre,37.108194,-1.855611,exacta,Banco Almería (GPS de campo),,
+Cs066,066,Rodena 1,Hemafrodita,Almería,Almería,Almería,ESP,cultivado,36.931917,-2.203833,exacta,Banco Almería (GPS de campo),,
+Cs067,067,Rodena 1,Hembra,Almería,Almería,Almería,ESP,cultivado,36.931917,-2.203833,exacta,Banco Almería (GPS de campo),,
+Cs068,068,Rodena 2,Hembra,Almería,Almería,Almería,ESP,cultivado,36.931639,-2.203028,exacta,Banco Almería (GPS de campo),,
+Cs069,069,El algarrobico 1,Hembra,Almería,Almería,Almería,ESP,silvestre,37.03025,-1.878806,exacta,Banco Almería (GPS de campo),,
+Cs070,070,El algarrobico 2,Macho,Almería,Almería,Almería,ESP,silvestre,37.030278,-1.879,exacta,Banco Almería (GPS de campo),,
+Cs071,071,El algarrobico 3,Hembra,Almería,Almería,Almería,ESP,silvestre,37.030278,-1.879,exacta,Banco Almería (GPS de campo),,
+Cs072,072,Nijar,Hembra,Almería,Almería,Almería,ESP,silvestre,36.953889,-2.196806,exacta,Banco Almería (GPS de campo),,
+Cs073,073,Plomo 1,Macho?,Almería,Almería,Almería,ESP,cultivado,36.931114,-1.990828,exacta,Banco Almería (GPS de campo),,
+Cs101,101,'A-14',Hembra,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs102,102,'A-19',Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs103,103,'A-23H',Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs104,104,'A-24H',Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs105,105,'A-33H',Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs106,106,'Aida',Hembra,Tarragona,PRT,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs107,107,'Albarcara',Hembra,Tarragona,ITA,Sicilia,ITA,cultivado,37.6,14.02,aproximada,Ubicación representativa de la región de origen,Región: Sicilia,media
+Cs108,108,'Aleixar l',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs109,109,'Aleixar ll',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs110,110,'Amele di Bari',Hembra,Tarragona,ITA,Bari,ITA,cultivado,41.12,16.87,aproximada,Ubicación representativa de la región de origen,Región: Bari,media
+Cs111,111,'Argelino',Hembra,Tarragona,DZA,,DZA,silvestre,36.2,3.6,aproximada,Ubicación representativa de la región de origen,País: DZA,baja
+Cs112,112,'Ariana 1',Hermafrodita,Tarragona,TUN,Ariana,TUN,silvestre,36.86,10.19,aproximada,Ubicación representativa de la región de origen,Región: Ariana,media
+Cs113,113,'Aroonshon ll',Hembra,Tarragona,ISR,,ISR,cultivado,31.5,34.9,aproximada,Ubicación representativa de la región de origen,País: ISR,baja
+Cs114,114,'Banks 2',Hembra,Tarragona,AUS,west,AUS,silvestre,-31.95,115.86,aproximada,Ubicación representativa de la región de origen,Región: west,media
+Cs115,115,'Banks 3',Hembra,Tarragona,AUS,west,AUS,silvestre,-31.95,115.86,aproximada,Ubicación representativa de la región de origen,Región: west,media
+Cs116,116,'Banks 4',Hembra,Tarragona,AUS,west,AUS,silvestre,-31.95,115.86,aproximada,Ubicación representativa de la región de origen,Región: west,media
+Cs117,117,'Banya Marra ll',Hembra,Tarragona,ESP,Barcelona,ESP,cultivado,41.55,1.95,aproximada,Ubicación representativa de la región de origen,Región: Barcelona,media
+Cs118,118,'Banyeta',Hembra,Tarragona,ESP,Castellon,ESP,cultivado,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs119,119,'Bargou B-11',Hembra,Tarragona,TUN,Bargou,TUN,silvestre,36.09,9.57,aproximada,Ubicación representativa de la región de origen,Región: Bargou,media
+Cs120,120,'Benajanafe M-26bis',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs121,121,'Benajarafe L-7',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs122,122,'Benajarafe M-1',Hermafrodita,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs123,123,'Benajarafe M-19',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs124,124,'Benajarafe M-25',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs125,125,'Benajarafe M-26',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs126,126,'Benajarafe M-4',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs127,127,'Benajarafe M-5',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs128,128,'Benajarafe N-10',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs129,129,'Benajarafe N-4',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs130,130,'Blanca',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs131,131,'Bobal',Hembra,Tarragona,ESP,Ibiza,ESP,cultivado,38.98,1.43,aproximada,Ubicación representativa de la región de origen,Región: Ibiza,media
+Cs132,132,'Bord Gaieta',Hembra,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs133,133,'Bord Granja',Hembra,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs134,134,'Bugadera ll',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs135,135,'C.V.T.',Hembra,Tarragona,AUS,Geralpton,AUS,silvestre,-28.774,114.611,aproximada,Ubicación representativa de la región de origen,Región: Geralpton,media
+Cs136,136,'Cacha',Hembra,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs137,137,K-2,¿?,Tarragona,MAR,Tarouant,MAR,silvestre,30.471,-8.877,aproximada,Ubicación representativa de la región de origen,Región: Tarouant,media
+Cs138,138,'Calabrese',Hembra,Tarragona,ITA,Sicilia,ITA,cultivado,37.6,14.02,aproximada,Ubicación representativa de la región de origen,Región: Sicilia,media
+Cs139,139,'Carrubello',Hembra,Tarragona,ITA,Sicilia,ITA,cultivado,37.6,14.02,aproximada,Ubicación representativa de la región de origen,Región: Sicilia,media
+Cs140,140,'Casares',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs141,141,'Casuda',Hembra,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs142,142,'Celia l',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs143,143,'Celia ll',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs144,144,'Cliffort',Hermafrodita,Tarragona,USA,California,USA,cultivado,36.78,-119.42,aproximada,Ubicación representativa de la región de origen,Región: California,media
+Cs145,145,'Collins',Hembra,Tarragona,AUS,West,AUS,silvestre,-31.95,115.86,aproximada,Ubicación representativa de la región de origen,Región: West,media
+Cs146,146,'Comuna' (A-7H),Hermafrodita,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs147,147,'Consorsi',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs148,148,'Cordoba',Hembra,Tarragona,ESP,Cordoba,ESP,silvestre,37.89,-4.78,aproximada,Ubicación representativa de la región de origen,Región: Cordoba,media
+Cs149,149,'Coripe ll',Hembra,Tarragona,ESP,Sevilla,ESP,silvestre,37.39,-5.99,aproximada,Ubicación representativa de la región de origen,Región: Sevilla,media
+Cs150,150,'Coripe lll',Hembra,Tarragona,ESP,Sevilla,ESP,silvestre,37.39,-5.99,aproximada,Ubicación representativa de la región de origen,Región: Sevilla,media
+Cs151,151,'Corona',Hermafrodita,Tarragona,ESP,Castellon,ESP,silvestre,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs152,152,'Costa da vaca',Hembra,Tarragona,PRT,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs153,153,'Costella de burro',Hembra,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs154,154,Costella de Ruc',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs155,155,'Costella Mallorca',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs156,156,'Costillenta',Hembra,Tarragona,ESP,Cadiz,ESP,cultivado,36.53,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Cadiz,media
+Cs157,157,'Cuartiella',Hermafrodita,Tarragona,ESP,Castellon,ESP,cultivado,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs158,158,'De la mel ll',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs159,159,'De la Peña',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs160,160,'Del Masclet' (CS-5H),Hermafrodita,Tarragona,ESP,Castellon,ESP,silvestre,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs161,161,D'en Pau',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs162,162,'Dolça Valenciana',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs163,163,'E-1',Hembra,Tarragona,MAR,Khenis-Takot,MAR,silvestre,33.3,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Khenis-Takot,media
+Cs164,164,'E-2',Hembra,Tarragona,MAR,Khenis-Takot,MAR,silvestre,33.3,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Khenis-Takot,media
+Cs165,165,'E-3',Hembra,Tarragona,MAR,Khenis-Takot,MAR,silvestre,33.3,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Khenis-Takot,media
+Cs166,166,'Fina',Hembra,Tarragona,ESP,Granada,ESP,cultivado,37.18,-3.6,aproximada,Ubicación representativa de la región de origen,Región: Granada,media
+Cs167,167,'Flor de llaurer',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs168,168,'Fonoll',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs169,169,'Font Garrover',Hermafrodita,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs170,170,'Fornera',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs171,171,'Gabriel',Hermafrodita,Tarragona,USA,California,USA,silvestre,36.78,-119.42,aproximada,Ubicación representativa de la región de origen,Región: California,media
+Cs172,172,'Galhosa ll',Hembra,Tarragona,PRT,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs173,173,'Gastor l',Hembra,Tarragona,ESP,Cadiz,ESP,silvestre,36.53,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Cadiz,media
+Cs174,174,'Gastor ll',Hembra,Tarragona,ESP,Cadiz,ESP,silvestre,36.53,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Cadiz,media
+Cs175,175,'Gastor lll',Hembra,Tarragona,ESP,Cadiz,ESP,silvestre,36.53,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Cadiz,media
+Cs176,176,'Gata' (GN-7H),Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs177,177,'Granja',Hermafrodita,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs178,178,'Herta-Ubrique',Hembra,Tarragona,ESP,Cadiz,ESP,silvestre,36.53,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Cadiz,media
+Cs179,179,'Hornachuelos',Hembra,Tarragona,ESP,Cordoba,ESP,desconocido,37.89,-4.78,aproximada,Ubicación representativa de la región de origen,Región: Cordoba,media
+Cs180,180,Rojal clon perafort,Hembra,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs181,181,Ibla,Hembra,Tarragona,ITA,Cerdeña,ITA,cultivado,40.12,9.01,aproximada,Ubicación representativa de la región de origen,Región: Cerdeña,media
+Cs182,182,'Impollinatrice',Hembra,Tarragona,ITA,Sicilia,ITA,silvestre,37.6,14.02,aproximada,Ubicación representativa de la región de origen,Región: Sicilia,media
+Cs183,183,'Jhadou J-3',Hembra,Tarragona,TUN,Jhadou,TUN,silvestre,34.0,9.0,aproximada,Ubicación representativa de la región de origen,Región: Jhadou,media
+Cs184,184,KH-2,Hembra,Tarragona,MAR,Farsi,MAR,silvestre,31.8,-7.1,aproximada,Ubicación representativa de la región de origen,Región: Farsi,media
+Cs185,185,'Komiski',Hembra,Tarragona,HRV,Croacia,HRV,cultivado,45.1,15.2,aproximada,Ubicación representativa de la región de origen,País: HRV,baja
+Cs186,186,'Koundourka',Hembra,Tarragona,CYP,Zona europea,CYP,cultivado,35.0,33.2,aproximada,Ubicación representativa de la región de origen,Región: Zona europea,media
+Cs187,187,'L-33' (F-15H),Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs188,188,'Lindar',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs189,189,'Llei d'Aldover',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs190,190,'Logoinha',Hembra,Tarragona,PRT,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs191,191,'M-5H',Hermafrodita,Tarragona,ESP,Barcelona,ESP,silvestre,41.55,1.95,aproximada,Ubicación representativa de la región de origen,Región: Barcelona,media
+Cs192,192,'Macho-1 Benajarafe',Macho,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs193,193,'Macho-2 Benajarafe',Macho,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs194,194,Mallorca 2-12' / E-13p (H2-12),Hemafrodita,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs195,195,'Mallorquina V-19H',Hermafrodita,Tarragona,ESP,Valencia,ESP,silvestre,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs196,196,'Marshall-5',Hembra,Tarragona,AUS,West,AUS,silvestre,-31.95,115.86,aproximada,Ubicación representativa de la región de origen,Región: West,media
+Cs197,197,'Marshall-9',Hembra,Tarragona,AUS,West,AUS,silvestre,-31.95,115.86,aproximada,Ubicación representativa de la región de origen,Región: West,media
+Cs198,198,'Marti l',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs199,199,'Marti ll',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs200,200,'Matalafera Bugarra',Hermafrodita,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs201,201,'Matalafera Soneja' (Cs-23),Hembra,Tarragona,ESP,Castellon,ESP,cultivado,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs202,202,Matalafera clon perafort,Hembra,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs203,203,'MA-V',Hembra,Tarragona,MAR,El Ksiba,MAR,silvestre,32.573,-6.022,aproximada,Ubicación representativa de la región de origen,Región: El Ksiba,media
+Cs204,204,'MA-Vl',Hembra,Tarragona,MAR,El Ksiba,MAR,silvestre,32.573,-6.022,aproximada,Ubicación representativa de la región de origen,Región: El Ksiba,media
+Cs205,205,'MA-X',Hembra,Tarragona,MAR,El Menzel-Beni Asral,MAR,silvestre,33.836,-4.533,aproximada,Ubicación representativa de la región de origen,Región: El Menzel-Beni Asral,media
+Cs206,206,'MA-Xl',Hembra,Tarragona,MAR,El Menzel-Beni Asral,MAR,silvestre,33.836,-4.533,aproximada,Ubicación representativa de la región de origen,Región: El Menzel-Beni Asral,media
+Cs207,207,'Melera',Hembra,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs208,208,'Melich l',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs209,209,'Melich ll',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs210,210,MI-3,Hembra,Tarragona,MAR,Moulay-Idris El-Methasiyne,MAR,silvestre,34.054,-5.522,aproximada,Ubicación representativa de la región de origen,Región: Moulay-Idris El-Methasiyne,media
+Cs211,211,'Mina ll',Hembra,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs212,212,'Mixto Bosch',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs213,213,'Mixto Princep',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs214,214,'Mixto Regues',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs215,215,'Mixto Salvado',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs216,216,'Mollar-l',Hembra,Tarragona,ESP,Ibiza,ESP,cultivado,38.98,1.43,aproximada,Ubicación representativa de la región de origen,Región: Ibiza,media
+Cs217,217,'Mollar-ll',Hembra,Tarragona,ESP,Murcia,ESP,cultivado,37.99,-1.3,aproximada,Ubicación representativa de la región de origen,Región: Murcia,media
+Cs218,218,'Mulata do Espargal',Hembra,Tarragona,PRT,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs219,219,'Mulata l',Hembra,Tarragona,PRT,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs220,220,'Negra A-1',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs221,221,'Negral',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs222,222,'Negrita Grazalema',Hembra,Tarragona,ESP,Cadiz,ESP,cultivado,36.53,-6.1,aproximada,Ubicación representativa de la región de origen,Región: Cadiz,media
+Cs223,223,'Nomag',Hembra,Tarragona,TUN,Nomag,TUN,cultivado,34.0,9.0,aproximada,Ubicación representativa de la región de origen,Región: Nomag,media
+Cs224,224,'Ojen-Cajiz ll',Hembra,Tarragona,ESP,Malaga,ESP,cultivado,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs225,225,'P-16',Hembra,Tarragona,TUR,De Kaska,TUR,silvestre,36.2,29.64,aproximada,Ubicación representativa de la región de origen,Región: De Kaska,media
+Cs226,226,'Pere Gelabert ll',Hermafrodita,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs227,227,K2-282,Hembra,Tarragona,MAR,Tarouant,MAR,silvestre,30.471,-8.877,aproximada,Ubicación representativa de la región de origen,Región: Tarouant,media
+Cs228,228,'Pic d'abella ll',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs229,229,'Pizarra',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs230,230,'Puigdelfi l',Hembra,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs231,231,'Puigdelfi lll',Hembra,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs232,232,'Punt Ingles',Hermafrodita,Tarragona,ESP,Castellon,ESP,cultivado,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs233,233,'Ramillete ll',Hermafrodita,Tarragona,ESP,Murcia,ESP,cultivado,37.99,-1.3,aproximada,Ubicación representativa de la región de origen,Región: Murcia,media
+Cs234,234,'Roja Ibiza',Hermafrodita,Tarragona,ESP,Ibiza,ESP,cultivado,38.98,1.43,aproximada,Ubicación representativa de la región de origen,Región: Ibiza,media
+Cs235,235,'Roja Mallorca',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs236,236,'Roja sa Pobla',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs237,237,'Rojal Castello',Hembra,Tarragona,ESP,Castellon,ESP,cultivado,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs238,238,'Ronda l',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs239,239,'Ronda ll',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs240,240,'Ronda lll',Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs241,241,'Rossa ll',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs242,242,'Roya Cs-22',Hembra,Tarragona,ESP,Castellon,ESP,cultivado,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs243,243,'Rubies',Hembra,Tarragona,ESP,Malaga,ESP,cultivado,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs244,244,'San Miguel Salinas' (SMS),Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs245,245,'Santa Maria',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs246,246,'Sayalonga',Hembra,Tarragona,ESP,Malaga,ESP,cultivado,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs247,247,'Sfax',Hembra,Tarragona,TUN,Sfax,TUN,cultivado,34.74,10.76,aproximada,Ubicación representativa de la región de origen,Región: Sfax,media
+Cs248,248,S'Hort des mestres',Hermafrodita,Tarragona,ESP,Mallorca,ESP,silvestre,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs249,249,'T-1',Hembra,Tarragona,MAR,Talaint,MAR,silvestre,29.85,-9.3,aproximada,Ubicación representativa de la región de origen,Región: Talaint,media
+Cs250,250,'Tendral',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs251,251,'Tio Clarito',Hembra,Tarragona,ESP,Cordoba,ESP,silvestre,37.89,-4.78,aproximada,Ubicación representativa de la región de origen,Región: Cordoba,media
+Cs252,252,'Traiguera',Hermafrodita,Tarragona,ESP,Castellon,ESP,silvestre,40.1,-0.1,aproximada,Ubicación representativa de la región de origen,Región: Castellon,media
+Cs253,253,'Turquia-1',Hembra,Tarragona,TUR,Sayini,TUR,silvestre,39.0,35.0,aproximada,Ubicación representativa de la región de origen,Región: Sayini,media
+Cs254,254,'Turquia-2',Hembra,Tarragona,TUR,Sayini,TUR,silvestre,39.0,35.0,aproximada,Ubicación representativa de la región de origen,Región: Sayini,media
+Cs255,255,'Turquia-81',Hembra,Tarragona,TUR,Sayini,TUR,silvestre,39.0,35.0,aproximada,Ubicación representativa de la región de origen,Región: Sayini,media
+Cs256,256,'Tylliria l',Hembra,Tarragona,CYP,Zona europea,CYP,cultivado,35.0,33.2,aproximada,Ubicación representativa de la región de origen,Región: Zona europea,media
+Cs257,257,'Tylliria ll',Hembra,Tarragona,CYP,Zona europea,CYP,cultivado,35.0,33.2,aproximada,Ubicación representativa de la región de origen,Región: Zona europea,media
+Cs258,258,Matalafera bunyol,Hembra,Tarragona,ESP,Valencia,ESP,cultivado,39.47,-0.38,aproximada,Ubicación representativa de la región de origen,Región: Valencia,media
+Cs259,259,'Uraiona',Hembra,Tarragona,ESP,Ibiza,ESP,cultivado,38.98,1.43,aproximada,Ubicación representativa de la región de origen,Región: Ibiza,media
+Cs260,260,'Valencia',Hembra,Tarragona,ESP,Tarragona,ESP,cultivado,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs261,261,'Vera',Hembra,Tarragona,ESP,Alicante,ESP,cultivado,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs262,262,'Vera Mallorca',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs263,263,'Vermella',Hembra,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs264,264,'Vives l',Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs265,265,A-19-H,Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs266,266,A-28-H,Hermafrodita,Tarragona,ESP,Alicante,ESP,silvestre,38.35,-0.48,aproximada,Ubicación representativa de la región de origen,Región: Alicante,media
+Cs267,267,Banya de cabra clon perafort,hembra,Tarragona,ESP,Barcelona,ESP,cultivado,41.55,1.95,aproximada,Ubicación representativa de la región de origen,Región: Barcelona,media
+Cs268,268,Dur-486,Hermafrodita,Tarragona,ESP,Tarragona,ESP,silvestre,41.06,1.1,aproximada,Ubicación representativa de la región de origen,Región: Tarragona,media
+Cs269,269,Duraio clon perafort,Hembaa,Tarragona,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs270,270,E-2 (E2-340),Hembra,Tarragona,MAR,Essaouira,MAR,silvestre,31.513,-9.77,aproximada,Ubicación representativa de la región de origen,Región: Essaouira,media
+Cs271,271,E3-347,Hembra,Tarragona,MAR,Essaouira,MAR,silvestre,31.513,-9.77,aproximada,Ubicación representativa de la región de origen,Región: Essaouira,media
+Cs272,272,Gaucin 1,Hembra,Tarragona,ESP,Málaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Málaga,media
+Cs273,273,Gibiuliana,Hembra,Tarragona,ITA,Sicilia,ITA,cultivado,37.6,14.02,aproximada,Ubicación representativa de la región de origen,Región: Sicilia,media
+Cs274,274,Benajarafe M-1.2.,Hemafrodita,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs275,275,Coripe II.2,Hembra,Tarragona,ESP,Sevilla,ESP,silvestre,37.39,-5.99,aproximada,Ubicación representativa de la región de origen,Región: Sevilla,media
+Cs276,276,Benajarafe M-5.2.,Hembra,Tarragona,ESP,Malaga,ESP,silvestre,36.72,-4.42,aproximada,Ubicación representativa de la región de origen,Región: Malaga,media
+Cs301,301,01 Mulata do Espargal,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs302,302,02 Galhosa,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs303,303,03 Clone Mulata (MFO),Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs304,304,04 Canela,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs305,305,05 Costela de vaca,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs306,306,06 Gasparinha,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs307,307,07 Aida,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs308,308,08 Preta de Lagos,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs309,309,09 Brava de Lagoa,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs310,310,10 Brava (Macho),Masculina,Portugal,Tavira (Coleção antiga),Algarve,PRT,desconocido,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs311,311,11 Galhó,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs312,312,12 Rojal,Feminina,Portugal,Espanha,,ESP,cultivado,40.0,-3.7,aproximada,Ubicación representativa de la región de origen,País: ESP,baja
+Cs313,313,13 Negrete,Feminina,Portugal,Espanha,,ESP,cultivado,40.0,-3.7,aproximada,Ubicación representativa de la región de origen,País: ESP,baja
+Cs314,314,14 Polinizadora / Hemafrodita,Hermafrodita,Portugal,,Algarve,PRT,cultivado,37.2,-8.1,aproximada,Ubicación representativa de la región de origen,Región: Algarve,media
+Cs315,315,15 Bela,Feminina,Portugal,Seleção Viveirista,Algarve,PRT,cultivado,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs316,316,16 Grossa,Feminina,Portugal,Seleção Viveirista,Algarve,PRT,cultivado,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs317,317,17 Alfa,Feminina,Portugal,Seleção Viveirista,Algarve,PRT,cultivado,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs318,318,18 Fina,Feminina,Portugal,Seleção Viveirista,Algarve,PRT,cultivado,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs319,319,19 Lami,Feminina,Portugal,Seleção Viveirista,Algarve,PRT,cultivado,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs320,320,20 Cavi,Feminina,Portugal,Seleção Viveirista,Algarve,PRT,cultivado,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs321,321,21 Machorro flor vermelha,Masculina,Portugal,Benafim,Algarve,PRT,desconocido,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs322,322,22 Machorro flor amarela,Masculina,Portugal,Benafim,Algarve,PRT,desconocido,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs323,323,23 Galhosa da Amendoeira,Feminina,Portugal,Querença,Algarve,PRT,cultivado,37.19,-7.995,aproximada,Ubicación representativa de la región de origen,Localidad: Querença,media
+Cs324,324,24 Alfarroba de Burro,Feminina,Portugal,Querença,Algarve,PRT,cultivado,37.19,-7.995,aproximada,Ubicación representativa de la región de origen,Localidad: Querença,media
+Cs325,325,25 Dolores,Feminina,Portugal,Moncarapacho,Algarve,PRT,cultivado,37.093,-7.783,aproximada,Ubicación representativa de la región de origen,Localidad: Moncarapacho,media
+Cs326,326,26 Comprida,Feminina,Portugal,"Corte Pequena, Odeleite",Algarve,PRT,cultivado,37.33,-7.47,aproximada,Ubicación representativa de la región de origen,"Localidad: Corte Pequena, Odeleite",media
+Cs327,327,27 Abílio,Feminina,Portugal,Benafim,Algarve,PRT,cultivado,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs328,328,28 Sousa,Feminina,Portugal,Benafim,Algarve,PRT,cultivado,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs329,329,29 Castanha,Feminina,Portugal,Benafim,Algarve,PRT,cultivado,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs330,330,30 Cueca,Feminina,Portugal,Benafim,Algarve,PRT,cultivado,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs331,331,31 Cardeira,Hermafrodita,Portugal,Benafim,Algarve,PRT,cultivado,37.242,-8.06,aproximada,Ubicación representativa de la región de origen,Localidad: Benafim,media
+Cs332,332,32 Galhosa Grado,Feminina,Portugal,"Mesquita Baixa, S B Alportel",Algarve,PRT,cultivado,37.222,-7.892,aproximada,Ubicación representativa de la región de origen,"Localidad: Mesquita Baixa, S B Alportel",media
+Cs333,333,33 Mulata Grado,Feminina,Portugal,"Mesquita Baixa, S B Alportel",Algarve,PRT,cultivado,37.222,-7.892,aproximada,Ubicación representativa de la región de origen,"Localidad: Mesquita Baixa, S B Alportel",media
+Cs334,334,34 Lentiscal,Feminina,Portugal,Paderne,Algarve,PRT,cultivado,37.16,-8.204,aproximada,Ubicación representativa de la región de origen,Localidad: Paderne,media
+Cs335,335,35 Picota,Feminina,Portugal,"Matos de Cima, Paderne",Algarve,PRT,cultivado,37.17,-8.19,aproximada,Ubicación representativa de la región de origen,"Localidad: Matos de Cima, Paderne",media
+Cs336,336,36 Gordinha,Feminina,Portugal,Paderne,Algarve,PRT,cultivado,37.16,-8.204,aproximada,Ubicación representativa de la región de origen,Localidad: Paderne,media
+Cs337,337,37 Canela do Moal,Feminina,Portugal,Várzea Vinagre,Algarve,PRT,cultivado,37.23,-8.04,aproximada,Ubicación representativa de la región de origen,Localidad: Várzea Vinagre,media
+Cs338,338,38 Arrife,Feminina,Portugal,Vila Nova Cacela,Algarve,PRT,cultivado,37.163,-7.548,aproximada,Ubicación representativa de la región de origen,Localidad: Vila Nova Cacela,media
+Cs339,339,39 Ramilhete,Feminina,Portugal,Quelfes,Algarve,PRT,cultivado,37.04,-7.833,aproximada,Ubicación representativa de la región de origen,Localidad: Quelfes,media
+Cs340,340,40 Pé Comprido,Feminina,Portugal,Tavira (Coleção antiga),Algarve,PRT,cultivado,37.127,-7.65,aproximada,Ubicación representativa de la región de origen,Localidad: Tavira (Coleção antiga),media
+Cs341,341,41 Paulo Santos,Feminina,Portugal,Quelfes,Algarve,PRT,cultivado,37.04,-7.833,aproximada,Ubicación representativa de la región de origen,Localidad: Quelfes,media
+Cs342,342,42 Polinizadora flor amarela (Pedra branca),Masculina,Portugal,Seleção Viveirista,Algarve,PRT,desconocido,37.2,-8.05,aproximada,Ubicación representativa de la región de origen,Localidad: Seleção Viveirista,media
+Cs343,343,43 Mulata da Parra,Feminina,Portugal,Moncarapacho,Algarve,PRT,cultivado,37.093,-7.783,aproximada,Ubicación representativa de la región de origen,Localidad: Moncarapacho,media
+Cs344,344,44 Turca,Feminina,Portugal,Paderne,Algarve,PRT,cultivado,37.16,-8.204,aproximada,Ubicación representativa de la región de origen,Localidad: Paderne,media
+Cs401,401,E-13P (13),Hermafrodita,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs402,402,Turis,Hermafrodita,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs403,403,E-3 (3),¿?,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs404,404,C14,Macho,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs405,405,Sdc,Femenina,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs406,406,E-4 (4),¿?,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs407,407,E-14P,Hermafrodita,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs408,408,Orellona,-,CAJAMAR,¿?,¿?,ESP,cultivado,36.796,-2.72,aproximada,Ubicación representativa de la región de origen,Origen desconocido — conservado en CAJAMAR Las Palmerillas,baja
+Cs501,501,Bajoca,Hembra,Mallorca,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs502,502,Banyeta,Hembra,Mallorca,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs503,503,Boval,Hembra,Mallorca,ESP,Ibiza,ESP,cultivado,38.98,1.43,aproximada,Ubicación representativa de la región de origen,Región: Ibiza,media
+Cs504,504,Capoll Curt,Hembra,Mallorca,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs505,505,Costella,Hembra,Mallorca,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs506,506,De ramell (del cabull),Hembra,Mallorca,ESP,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs507,507,Fina,Hembra,Mallorca,ESP,Ibiza,ESP,cultivado,38.98,1.43,aproximada,Ubicación representativa de la región de origen,Región: Ibiza,media
+Cs508,508,Bauçana,Hembra,Mallorca,Esp,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs509,509,De Santa maria,Hembra,Mallorca,Esp,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs510,510,Negrill,Hembra,Mallorca,Esp,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs511,511,Negrilla,Hembra,Mallorca,Esp,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs512,512,Sa llebre,Hermafrodita,Mallorca,Esp,Mallorca,ESP,cultivado,39.62,2.99,aproximada,Ubicación representativa de la región de origen,Región: Mallorca,media
+Cs513,513,Albanchez 1,Hembra,Almería,Esp,Almería,ESP,silvestre,37.277,-2.197,exacta,Banco Almería (GPS de campo),,
+Cs514,514,Albanchez 2,Hermafrodita,Almería,Esp,Almería,ESP,silvestre,37.386,-2.181,exacta,Banco Almería (GPS de campo),,
+Cs515,515,Albanchez 3,Hembra,Almería,Esp,Almería,ESP,silvestre,37.285,-2.181,exacta,Banco Almería (GPS de campo),,
+Cs516,516,Marrakech (Aghmat),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.451958,-7.804525,exacta,Marruecos_coord_correctas,,
+Cs517,517,Marrakech (Ourika),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.427483,-7.799414,exacta,Marruecos_coord_correctas,,
+Cs518,518,Ouezzane (COUMMUNE Moukriseet),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.046944,-5.535833,exacta,Marruecos_coord_correctas,,
+Cs519,519,Ouezzane(COMMUNE ZOUMI),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.149167,-5.671111,exacta,Marruecos_coord_correctas,,
+Cs520,520,Beni Mellal (Aïn Asserdoun),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,32.319133,-6.324267,exacta,Marruecos_coord_correctas,,
+Cs521,521,Beni Mellal (Tanougha),Macho,Marruecos,MAR,Marruecos,MAR,silvestre,32.479544,-6.1407,exacta,Marruecos_coord_correctas,,
+Cs522,522,Taroudant (3),X,Marruecos,MAR,Marruecos,MAR,silvestre,30.495256,-8.868706,exacta,Marruecos_coord_correctas,,
+Cs523,523,Taroudant (2),X,Marruecos,MAR,Marruecos,MAR,silvestre,30.419461,-8.940628,exacta,Marruecos_coord_correctas,,
+Cs524,524,El Hajeb (station 2),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,33.691444,-5.385167,exacta,Marruecos_coord_correctas,,
+Cs525,525,El Hajeb (station 1),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,33.691,-5.378833,exacta,Marruecos_coord_correctas,,
+Cs526,526,Sidi Ifni (Tioughza),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,29.650412,-9.950833,exacta,Datos Marruecos Hasna (respaldo),,
+Cs527,527,Tafraoute (Ait Mansour),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,29.551389,-8.880833,exacta,Marruecos_coord_correctas,,
+Cs528,528,Azilal (AIT-TAGLA),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.961667,-6.761667,exacta,Marruecos_coord_correctas,,
+Cs529,529,Azilal (IKEDRAN),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.801717,-6.696228,exacta,Marruecos_coord_correctas,,
+Cs530,530,Essaouira (ouled mrabet),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.604139,-9.193917,exacta,Marruecos_coord_correctas,,
+Cs531,531,Essaouira (mouarid),Macho,Marruecos,MAR,Marruecos,MAR,silvestre,31.3823,-9.185272,exacta,Marruecos_coord_correctas,,
+Cs532,532,Essaouira (EL-kodia),Macho,Marruecos,MAR,Marruecos,MAR,silvestre,31.607833,-9.194833,exacta,Marruecos_coord_correctas,,
+Cs533,533,Oued Laou (Oued Laou),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.369745,-5.176603,exacta,Datos Marruecos Hasna (respaldo),,
+Cs534,534,Chefchaouen (1),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,34.900031,-5.167986,exacta,Marruecos_coord_correctas,,
+Cs535,535,Chefchaouen (2),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,34.909558,-5.199014,exacta,Marruecos_coord_correctas,,
+Cs536,536,Khénifra (Kaf nsour),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,32.912039,-5.957981,exacta,Marruecos_coord_correctas,,
+Cs537,537,Khénifra (Sidi-Bouabbad),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,32.9193,-6.085986,exacta,Marruecos_coord_correctas,,
+Cs538,538,Berkane (MADAGH),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.021889,-2.352011,exacta,Datos Marruecos Hasna (respaldo),,
+Cs539,539,Berkane (TAFOUGHALT),Macho,Marruecos,MAR,Marruecos,MAR,silvestre,34.806458,-2.371869,exacta,Datos Marruecos Hasna (respaldo),,
+Cs540,540,Nador (Bouarg nador),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.081222,-2.91075,exacta,Marruecos_coord_correctas,,
+Cs541,541,Nador (Tafarsit driouch),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.002583,-3.538417,exacta,Marruecos_coord_correctas,,
+Cs542,542,Marrakech (SIDI-Abdellah ghiat),Macho,Marruecos,MAR,Marruecos,MAR,silvestre,31.474664,-7.804525,exacta,Marruecos_coord_correctas,,
+Cs543,543,Azilal (Ait Ouarda),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,32.131389,-6.525,exacta,Marruecos_coord_correctas,,
+Cs544,544,Khenifra (ouaoumana),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,32.708863,-5.811165,exacta,Datos Marruecos Hasna (respaldo),,
+Cs545,545,Marrakech (SITI FATMA),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.310263,-7.741893,exacta,Datos Marruecos Hasna (respaldo),,
+Cs546,546,Akchour (Akchour),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.245425,-5.190331,exacta,Datos Marruecos Hasna (respaldo),,
+Cs547,547,Marrakech (AIT OURRIR-arbre1),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.577778,-7.603611,exacta,Marruecos_coord_correctas,,
+Cs548,548,Marrakech (AIT OURRIR-arbre2),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,31.49,-7.439167,exacta,Marruecos_coord_correctas,,
+Cs549,549,Nador (NADOR-arbre1),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.239444,-2.946944,exacta,Marruecos_coord_correctas,,
+Cs550,550,Nador (NADOR-arbre2),Hembra,Marruecos,MAR,Marruecos,MAR,silvestre,35.240556,-2.941667,exacta,Marruecos_coord_correctas,,
+Cs551,551,Dalías,Hembra,Almería,Esp,Almería,ESP,desconocido,36.82458,-2.86695,exacta,Banco Almería (GPS de campo),,
+Cs552,552,Sierra Alhamilla,Hembra,Almería,Esp,Almería,ESP,silvestre,36.968056,-2.300306,exacta,Banco Almería (GPS de campo),,
+Cs553,553,Partaloa,Hembra,Almería,Esp,Almería,ESP,silvestre,37.405318,-2.218995,exacta,Banco Almería (GPS de campo),,
+Cs554,554,Berja 1,Hembra,Almería,Esp,Almería,ESP,silvestre,36.816898,-2.983711,exacta,Banco Almería (GPS de campo),,
+Cs555,555,Berja 2,Hembra,Almería,Esp,Almería,ESP,silvestre,36.816798,-2.983624,exacta,Banco Almería (GPS de campo),,
+Cs556,556,Berja 4,Hembra,Almería,Esp,Almería,ESP,silvestre,36.816418,-2.983922,exacta,Banco Almería (GPS de campo),,
+Cs557,557,Berja 5,Hembra,Almería,Esp,Almería,ESP,silvestre,36.839703,-2.942414,exacta,Banco Almería (GPS de campo),,
+Cs558,558,Río aguas,Hembra,Almería,Esp,Almería,ESP,silvestre,37.1,-2.35,aproximada,Ubicación representativa de la región de origen,Región: Almería,media

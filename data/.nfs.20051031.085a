@@ -1,12 +1,11 @@
 {
  "meta": {
-  "generated": "2026-09-20",
+  "generated": "2026-09-19",
   "source": "Listado muestras ADN (final).xlsx",
   "crs": "WGS84 (EPSG:4326), grados decimales",
   "count": 359,
   "count_exact": 117,
-  "count_approx": 242,
-  "count_fichas": 71
+  "count_approx": 242
  },
  "trees": [
   {
@@ -25,8 +24,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Ual1.png"
+   "confidence": null
   },
   {
    "id": "Cs002",
@@ -44,8 +42,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Ual2.png"
+   "confidence": null
   },
   {
    "id": "Cs003",
@@ -63,8 +60,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs004",
@@ -82,8 +78,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Rodalquilar.png"
+   "confidence": null
   },
   {
    "id": "Cs005",
@@ -101,8 +96,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Botanico4.png"
+   "confidence": null
   },
   {
    "id": "Cs006",
@@ -120,8 +114,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LasNinas.png"
+   "confidence": null
   },
   {
    "id": "Cs007",
@@ -139,8 +132,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Botanico3.png"
+   "confidence": null
   },
   {
    "id": "Cs008",
@@ -158,8 +150,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Vicar1.png"
+   "confidence": null
   },
   {
    "id": "Cs009",
@@ -177,8 +168,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Vicar2.png"
+   "confidence": null
   },
   {
    "id": "Cs010",
@@ -196,8 +186,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Isleta2.png"
+   "confidence": null
   },
   {
    "id": "Cs011",
@@ -215,8 +204,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LasNegras3.png"
+   "confidence": null
   },
   {
    "id": "Cs012",
@@ -234,8 +222,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Isleta1.png"
+   "confidence": null
   },
   {
    "id": "Cs013",
@@ -253,8 +240,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Vicar1.png"
+   "confidence": null
   },
   {
    "id": "Cs014",
@@ -272,8 +258,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LasNegras1.png"
+   "confidence": null
   },
   {
    "id": "Cs015",
@@ -291,8 +276,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Botanico1.png"
+   "confidence": null
   },
   {
    "id": "Cs016",
@@ -310,8 +294,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Botanico2.png"
+   "confidence": null
   },
   {
    "id": "Cs017",
@@ -329,8 +312,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LosAlbacetes.png"
+   "confidence": null
   },
   {
    "id": "Cs018",
@@ -348,8 +330,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LasNegras1.png"
+   "confidence": null
   },
   {
    "id": "Cs019",
@@ -367,8 +348,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LasNegras2.png"
+   "confidence": null
   },
   {
    "id": "Cs020",
@@ -386,8 +366,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LasNegras3.png"
+   "confidence": null
   },
   {
    "id": "Cs021",
@@ -405,8 +384,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Bedar2.png"
+   "confidence": null
   },
   {
    "id": "Cs022",
@@ -424,8 +402,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Bedar2.png"
+   "confidence": null
   },
   {
    "id": "Cs023",
@@ -443,8 +420,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Bedar1.png"
+   "confidence": null
   },
   {
    "id": "Cs024",
@@ -462,8 +438,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Alquian.png"
+   "confidence": null
   },
   {
    "id": "Cs025",
@@ -481,8 +456,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LaSerena2.png"
+   "confidence": null
   },
   {
    "id": "Cs026",
@@ -500,8 +474,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Bedar3.png"
+   "confidence": null
   },
   {
    "id": "Cs027",
@@ -519,8 +492,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LaSerena2.png"
+   "confidence": null
   },
   {
    "id": "Cs028",
@@ -538,8 +510,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LaSerena1.png"
+   "confidence": null
   },
   {
    "id": "Cs029",
@@ -557,8 +528,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Ual3.png"
+   "confidence": null
   },
   {
    "id": "Cs030",
@@ -576,8 +546,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Ual4.png"
+   "confidence": null
   },
   {
    "id": "Cs031",
@@ -595,8 +564,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "MojacarAlto1.png"
+   "confidence": null
   },
   {
    "id": "Cs032",
@@ -614,8 +582,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Mojacar.png"
+   "confidence": null
   },
   {
    "id": "Cs033",
@@ -633,8 +600,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Plomo2.png"
+   "confidence": null
   },
   {
    "id": "Cs034",
@@ -652,8 +618,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Plomo3.png"
+   "confidence": null
   },
   {
    "id": "Cs035",
@@ -671,8 +636,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Pileta1.png"
+   "confidence": null
   },
   {
    "id": "Cs036",
@@ -690,8 +654,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Pileta2.png"
+   "confidence": null
   },
   {
    "id": "Cs037",
@@ -709,8 +672,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Belen1.png"
+   "confidence": null
   },
   {
    "id": "Cs038",
@@ -728,8 +690,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Belen2.png"
+   "confidence": null
   },
   {
    "id": "Cs039",
@@ -747,8 +708,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "ElDeCristobal.png"
+   "confidence": null
   },
   {
    "id": "Cs040",
@@ -766,8 +726,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "ElDeRafael.png"
+   "confidence": null
   },
   {
    "id": "Cs041",
@@ -785,8 +744,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Marchalico1.png"
+   "confidence": null
   },
   {
    "id": "Cs042",
@@ -804,8 +762,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Marchalico1.png"
+   "confidence": null
   },
   {
    "id": "Cs043",
@@ -823,8 +780,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Marchalico2.png"
+   "confidence": null
   },
   {
    "id": "Cs044",
@@ -842,8 +798,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Marchalico3.png"
+   "confidence": null
   },
   {
    "id": "Cs045",
@@ -861,8 +816,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LosManas1.png"
+   "confidence": null
   },
   {
    "id": "Cs046",
@@ -880,8 +834,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LosManas1.png"
+   "confidence": null
   },
   {
    "id": "Cs047",
@@ -899,8 +852,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LosManas2.png"
+   "confidence": null
   },
   {
    "id": "Cs048",
@@ -918,8 +870,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "LosManas2.png"
+   "confidence": null
   },
   {
    "id": "Cs049",
@@ -937,8 +888,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Lucainena1.png"
+   "confidence": null
   },
   {
    "id": "Cs050",
@@ -956,8 +906,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Lucainena2.png"
+   "confidence": null
   },
   {
    "id": "Cs051",
@@ -975,8 +924,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Lucainena3.png"
+   "confidence": null
   },
   {
    "id": "Cs052",
@@ -994,8 +942,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Lucainena4.png"
+   "confidence": null
   },
   {
    "id": "Cs053",
@@ -1013,8 +960,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Enmedio1.png"
+   "confidence": null
   },
   {
    "id": "Cs054",
@@ -1032,8 +978,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Enmedio2.png"
+   "confidence": null
   },
   {
    "id": "Cs055",
@@ -1051,8 +996,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Enmedio3.png"
+   "confidence": null
   },
   {
    "id": "Cs056",
@@ -1070,8 +1014,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Enmedio4.png"
+   "confidence": null
   },
   {
    "id": "Cs057",
@@ -1089,8 +1032,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Enmedio5.png"
+   "confidence": null
   },
   {
    "id": "Cs058",
@@ -1108,8 +1050,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Enmedio6.png"
+   "confidence": null
   },
   {
    "id": "Cs059",
@@ -1127,8 +1068,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "GolfI.png"
+   "confidence": null
   },
   {
    "id": "Cs060",
@@ -1146,8 +1086,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Almería (Almería)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs061",
@@ -1165,8 +1104,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "MojacarAlto2.png"
+   "confidence": null
   },
   {
    "id": "Cs062",
@@ -1184,8 +1122,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "MojacarAlto3.png"
+   "confidence": null
   },
   {
    "id": "Cs063",
@@ -1203,8 +1140,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "MojacarAlto4.png"
+   "confidence": null
   },
   {
    "id": "Cs064",
@@ -1222,8 +1158,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "MojacarAlto5.png"
+   "confidence": null
   },
   {
    "id": "Cs065",
@@ -1241,8 +1176,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "MojacarAlto6.png"
+   "confidence": null
   },
   {
    "id": "Cs066",
@@ -1260,8 +1194,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Rodena1.png"
+   "confidence": null
   },
   {
    "id": "Cs067",
@@ -1279,8 +1212,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Rodena1.png"
+   "confidence": null
   },
   {
    "id": "Cs068",
@@ -1298,8 +1230,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Rodena2.png"
+   "confidence": null
   },
   {
    "id": "Cs069",
@@ -1317,8 +1248,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "ElAlgarrobico1.png"
+   "confidence": null
   },
   {
    "id": "Cs070",
@@ -1336,8 +1266,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "ElAlgarrobico2.png"
+   "confidence": null
   },
   {
    "id": "Cs071",
@@ -1355,8 +1284,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "ElAlgarrobico3.png"
+   "confidence": null
   },
   {
    "id": "Cs072",
@@ -1374,8 +1302,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Nijar.png"
+   "confidence": null
   },
   {
    "id": "Cs073",
@@ -1393,8 +1320,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": "Plomo1.png"
+   "confidence": null
   },
   {
    "id": "Cs101",
@@ -1412,8 +1338,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs102",
@@ -1431,8 +1356,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs103",
@@ -1450,8 +1374,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs104",
@@ -1469,8 +1392,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs105",
@@ -1488,8 +1410,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs106",
@@ -1507,8 +1428,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs107",
@@ -1526,8 +1446,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sicilia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs108",
@@ -1545,8 +1464,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs109",
@@ -1564,8 +1482,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs110",
@@ -1583,8 +1500,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Bari",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs111",
@@ -1602,8 +1518,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "País: DZA",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs112",
@@ -1621,8 +1536,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ariana",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs113",
@@ -1640,8 +1554,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "País: ISR",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs114",
@@ -1659,8 +1572,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: west",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs115",
@@ -1678,8 +1590,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: west",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs116",
@@ -1697,8 +1608,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: west",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs117",
@@ -1716,8 +1626,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Barcelona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs118",
@@ -1735,8 +1644,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs119",
@@ -1754,8 +1662,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Bargou",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs120",
@@ -1773,8 +1680,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs121",
@@ -1792,8 +1698,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs122",
@@ -1811,8 +1716,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs123",
@@ -1830,8 +1734,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs124",
@@ -1849,8 +1752,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs125",
@@ -1868,8 +1770,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs126",
@@ -1887,8 +1788,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs127",
@@ -1906,8 +1806,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs128",
@@ -1925,8 +1824,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs129",
@@ -1944,8 +1842,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs130",
@@ -1963,8 +1860,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs131",
@@ -1982,8 +1878,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ibiza",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs132",
@@ -2001,8 +1896,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs133",
@@ -2020,8 +1914,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs134",
@@ -2039,8 +1932,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs135",
@@ -2058,8 +1950,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Geralpton",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs136",
@@ -2077,8 +1968,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs137",
@@ -2096,8 +1986,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarouant",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs138",
@@ -2115,8 +2004,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sicilia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs139",
@@ -2134,8 +2022,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sicilia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs140",
@@ -2153,8 +2040,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs141",
@@ -2172,8 +2058,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs142",
@@ -2191,8 +2076,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs143",
@@ -2210,8 +2094,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs144",
@@ -2229,8 +2112,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: California",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs145",
@@ -2248,8 +2130,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: West",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs146",
@@ -2267,8 +2148,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs147",
@@ -2286,8 +2166,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs148",
@@ -2305,8 +2184,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cordoba",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs149",
@@ -2324,8 +2202,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sevilla",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs150",
@@ -2343,8 +2220,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sevilla",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs151",
@@ -2362,8 +2238,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs152",
@@ -2381,8 +2256,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs153",
@@ -2400,8 +2274,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs154",
@@ -2419,8 +2292,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs155",
@@ -2438,8 +2310,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs156",
@@ -2457,8 +2328,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cadiz",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs157",
@@ -2476,8 +2346,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs158",
@@ -2495,8 +2364,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs159",
@@ -2514,8 +2382,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs160",
@@ -2533,8 +2400,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs161",
@@ -2552,8 +2418,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs162",
@@ -2571,8 +2436,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs163",
@@ -2590,8 +2454,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Khenis-Takot",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs164",
@@ -2609,8 +2472,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Khenis-Takot",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs165",
@@ -2628,8 +2490,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Khenis-Takot",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs166",
@@ -2647,8 +2508,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Granada",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs167",
@@ -2666,8 +2526,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs168",
@@ -2685,8 +2544,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs169",
@@ -2704,8 +2562,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs170",
@@ -2723,8 +2580,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs171",
@@ -2742,8 +2598,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: California",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs172",
@@ -2761,8 +2616,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs173",
@@ -2780,8 +2634,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cadiz",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs174",
@@ -2799,8 +2652,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cadiz",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs175",
@@ -2818,8 +2670,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cadiz",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs176",
@@ -2837,8 +2688,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs177",
@@ -2856,8 +2706,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs178",
@@ -2875,8 +2724,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cadiz",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs179",
@@ -2894,8 +2742,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cordoba",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs180",
@@ -2913,8 +2760,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs181",
@@ -2932,8 +2778,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cerdeña",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs182",
@@ -2951,8 +2796,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sicilia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs183",
@@ -2970,8 +2814,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Jhadou",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs184",
@@ -2989,8 +2832,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Farsi",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs185",
@@ -3008,8 +2850,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "País: HRV",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs186",
@@ -3027,8 +2868,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Zona europea",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs187",
@@ -3046,8 +2886,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs188",
@@ -3065,8 +2904,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs189",
@@ -3084,8 +2922,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs190",
@@ -3103,8 +2940,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs191",
@@ -3122,8 +2958,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Barcelona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs192",
@@ -3141,8 +2976,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs193",
@@ -3160,8 +2994,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs194",
@@ -3179,8 +3012,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs195",
@@ -3198,8 +3030,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs196",
@@ -3217,8 +3048,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: West",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs197",
@@ -3236,8 +3066,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: West",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs198",
@@ -3255,8 +3084,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs199",
@@ -3274,8 +3102,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs200",
@@ -3293,8 +3120,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs201",
@@ -3312,8 +3138,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs202",
@@ -3331,8 +3156,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs203",
@@ -3350,8 +3174,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: El Ksiba",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs204",
@@ -3369,8 +3192,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: El Ksiba",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs205",
@@ -3388,8 +3210,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: El Menzel-Beni Asral",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs206",
@@ -3407,8 +3228,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: El Menzel-Beni Asral",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs207",
@@ -3426,8 +3246,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs208",
@@ -3445,8 +3264,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs209",
@@ -3464,8 +3282,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs210",
@@ -3483,8 +3300,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Moulay-Idris El-Methasiyne",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs211",
@@ -3502,8 +3318,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs212",
@@ -3521,8 +3336,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs213",
@@ -3540,8 +3354,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs214",
@@ -3559,8 +3372,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs215",
@@ -3578,8 +3390,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs216",
@@ -3597,8 +3408,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ibiza",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs217",
@@ -3616,8 +3426,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Murcia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs218",
@@ -3635,8 +3444,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs219",
@@ -3654,8 +3462,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs220",
@@ -3673,8 +3480,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs221",
@@ -3692,8 +3498,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs222",
@@ -3711,8 +3516,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cadiz",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs223",
@@ -3730,8 +3534,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Nomag",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs224",
@@ -3749,8 +3552,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs225",
@@ -3768,8 +3570,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: De Kaska",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs226",
@@ -3787,8 +3588,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs227",
@@ -3806,8 +3606,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarouant",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs228",
@@ -3825,8 +3624,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs229",
@@ -3844,8 +3642,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs230",
@@ -3863,8 +3660,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs231",
@@ -3882,8 +3678,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs232",
@@ -3901,8 +3696,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs233",
@@ -3920,8 +3714,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Murcia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs234",
@@ -3939,8 +3732,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ibiza",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs235",
@@ -3958,8 +3750,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs236",
@@ -3977,8 +3768,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs237",
@@ -3996,8 +3786,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs238",
@@ -4015,8 +3804,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs239",
@@ -4034,8 +3822,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs240",
@@ -4053,8 +3840,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs241",
@@ -4072,8 +3858,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs242",
@@ -4091,8 +3876,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs243",
@@ -4110,8 +3894,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs244",
@@ -4129,8 +3912,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs245",
@@ -4148,8 +3930,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs246",
@@ -4167,8 +3948,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs247",
@@ -4186,8 +3966,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sfax",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs248",
@@ -4205,8 +3984,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs249",
@@ -4224,8 +4002,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Talaint",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs250",
@@ -4243,8 +4020,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs251",
@@ -4262,8 +4038,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Cordoba",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs252",
@@ -4281,8 +4056,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Castellon",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs253",
@@ -4300,8 +4074,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sayini",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs254",
@@ -4319,8 +4092,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sayini",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs255",
@@ -4338,8 +4110,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sayini",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs256",
@@ -4357,8 +4128,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Zona europea",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs257",
@@ -4376,8 +4146,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Zona europea",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs258",
@@ -4395,8 +4164,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Valencia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs259",
@@ -4414,8 +4182,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ibiza",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs260",
@@ -4433,8 +4200,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs261",
@@ -4452,8 +4218,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs262",
@@ -4471,8 +4236,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs263",
@@ -4490,8 +4254,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs264",
@@ -4509,8 +4272,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs265",
@@ -4528,8 +4290,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs266",
@@ -4547,8 +4308,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Alicante",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs267",
@@ -4566,8 +4326,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Barcelona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs268",
@@ -4585,8 +4344,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Tarragona",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs269",
@@ -4604,8 +4362,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs270",
@@ -4623,8 +4380,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Essaouira",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs271",
@@ -4642,8 +4398,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Essaouira",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs272",
@@ -4661,8 +4416,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Málaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs273",
@@ -4680,8 +4434,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sicilia",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs274",
@@ -4699,8 +4452,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs275",
@@ -4718,8 +4470,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Sevilla",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs276",
@@ -4737,8 +4488,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Malaga",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs301",
@@ -4756,8 +4506,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs302",
@@ -4775,8 +4524,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs303",
@@ -4794,8 +4542,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs304",
@@ -4813,8 +4560,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs305",
@@ -4832,8 +4578,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs306",
@@ -4851,8 +4596,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs307",
@@ -4870,8 +4614,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs308",
@@ -4889,8 +4632,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs309",
@@ -4908,8 +4650,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs310",
@@ -4927,8 +4668,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs311",
@@ -4946,8 +4686,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs312",
@@ -4965,8 +4704,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "País: ESP",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs313",
@@ -4984,8 +4722,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "País: ESP",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs314",
@@ -5003,8 +4740,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Algarve",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs315",
@@ -5022,8 +4758,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs316",
@@ -5041,8 +4776,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs317",
@@ -5060,8 +4794,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs318",
@@ -5079,8 +4812,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs319",
@@ -5098,8 +4830,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs320",
@@ -5117,8 +4848,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs321",
@@ -5136,8 +4866,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs322",
@@ -5155,8 +4884,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs323",
@@ -5174,8 +4902,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Querença",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs324",
@@ -5193,8 +4920,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Querença",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs325",
@@ -5212,8 +4938,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Moncarapacho",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs326",
@@ -5231,8 +4956,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Corte Pequena, Odeleite",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs327",
@@ -5250,8 +4974,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs328",
@@ -5269,8 +4992,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs329",
@@ -5288,8 +5010,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs330",
@@ -5307,8 +5028,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs331",
@@ -5326,8 +5046,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Benafim",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs332",
@@ -5345,8 +5064,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Mesquita Baixa, S B Alportel",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs333",
@@ -5364,8 +5082,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Mesquita Baixa, S B Alportel",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs334",
@@ -5383,8 +5100,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Paderne",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs335",
@@ -5402,8 +5118,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Matos de Cima, Paderne",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs336",
@@ -5421,8 +5136,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Paderne",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs337",
@@ -5440,8 +5154,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Várzea Vinagre",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs338",
@@ -5459,8 +5172,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Vila Nova Cacela",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs339",
@@ -5478,8 +5190,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Quelfes",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs340",
@@ -5497,8 +5208,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Tavira (Coleção antiga)",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs341",
@@ -5516,8 +5226,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Quelfes",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs342",
@@ -5535,8 +5244,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Seleção Viveirista",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs343",
@@ -5554,8 +5262,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Moncarapacho",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs344",
@@ -5573,8 +5280,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Localidad: Paderne",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs401",
@@ -5592,8 +5298,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs402",
@@ -5611,8 +5316,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs403",
@@ -5630,8 +5334,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs404",
@@ -5649,8 +5352,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs405",
@@ -5668,8 +5370,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs406",
@@ -5687,8 +5388,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs407",
@@ -5706,8 +5406,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs408",
@@ -5725,8 +5424,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Origen desconocido — conservado en CAJAMAR Las Palmerillas",
-   "confidence": "baja",
-   "ficha": null
+   "confidence": "baja"
   },
   {
    "id": "Cs501",
@@ -5744,8 +5442,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs502",
@@ -5763,8 +5460,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs503",
@@ -5782,8 +5478,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ibiza",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs504",
@@ -5801,8 +5496,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs505",
@@ -5820,8 +5514,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs506",
@@ -5839,8 +5532,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs507",
@@ -5858,8 +5550,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Ibiza",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs508",
@@ -5877,8 +5568,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs509",
@@ -5896,8 +5586,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs510",
@@ -5915,8 +5604,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs511",
@@ -5934,8 +5622,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs512",
@@ -5953,8 +5640,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Mallorca",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   },
   {
    "id": "Cs513",
@@ -5972,8 +5658,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs514",
@@ -5991,8 +5676,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs515",
@@ -6010,8 +5694,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs516",
@@ -6029,8 +5712,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs517",
@@ -6048,8 +5730,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs518",
@@ -6067,8 +5748,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs519",
@@ -6086,8 +5766,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs520",
@@ -6105,8 +5784,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs521",
@@ -6124,8 +5802,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs522",
@@ -6143,8 +5820,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs523",
@@ -6162,8 +5838,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs524",
@@ -6181,8 +5856,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs525",
@@ -6200,8 +5874,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs526",
@@ -6219,8 +5892,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs527",
@@ -6238,8 +5910,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs528",
@@ -6257,8 +5928,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs529",
@@ -6276,8 +5946,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs530",
@@ -6295,8 +5964,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs531",
@@ -6314,8 +5982,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs532",
@@ -6333,8 +6000,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs533",
@@ -6352,8 +6018,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs534",
@@ -6371,8 +6036,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs535",
@@ -6390,8 +6054,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs536",
@@ -6409,8 +6072,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs537",
@@ -6428,8 +6090,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs538",
@@ -6447,8 +6108,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs539",
@@ -6466,8 +6126,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs540",
@@ -6485,8 +6144,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs541",
@@ -6504,8 +6162,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs542",
@@ -6523,8 +6180,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs543",
@@ -6542,8 +6198,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs544",
@@ -6561,8 +6216,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs545",
@@ -6580,8 +6234,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs546",
@@ -6599,8 +6252,7 @@
    "precision": "exacta",
    "coord_source": "Datos Marruecos Hasna (respaldo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs547",
@@ -6618,8 +6270,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs548",
@@ -6637,8 +6288,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs549",
@@ -6656,8 +6306,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs550",
@@ -6675,8 +6324,7 @@
    "precision": "exacta",
    "coord_source": "Marruecos_coord_correctas",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs551",
@@ -6694,8 +6342,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs552",
@@ -6713,8 +6360,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs553",
@@ -6732,8 +6378,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs554",
@@ -6751,8 +6396,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs555",
@@ -6770,8 +6414,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs556",
@@ -6789,8 +6432,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs557",
@@ -6808,8 +6450,7 @@
    "precision": "exacta",
    "coord_source": "Banco Almería (GPS de campo)",
    "region_label": null,
-   "confidence": null,
-   "ficha": null
+   "confidence": null
   },
   {
    "id": "Cs558",
@@ -6827,8 +6468,7 @@
    "precision": "aproximada",
    "coord_source": "Ubicación representativa de la región de origen",
    "region_label": "Región: Almería",
-   "confidence": "media",
-   "ficha": null
+   "confidence": "media"
   }
  ]
 }
