@@ -7,6 +7,7 @@ Listado muestras ADN (final).xlsx
 # sistema
 .DS_Store
 Thumbs.db
+.nfs*
 
 # dependencias / temporales
 node_modules/

@@ -31,39 +31,34 @@ try:
         pg.route("**/*", handler)
         pg.goto(base, wait_until="load", timeout=25000)
         pg.wait_for_selector(".tree-marker, .cl", timeout=15000)
-        time.sleep(1.2)
+        time.sleep(1.5)
 
         print("STATS:", pg.inner_text("#stats"))
-        print("marcadores:", pg.eval_on_selector_all(".tree-marker", "e=>e.length"),
-              "clústeres:", pg.eval_on_selector_all(".cl", "e=>e.length"))
+        print("globo por defecto:", pg.eval_on_selector("#toggleGlobe", "e=>e.classList.contains('on')"))
         print("panel cerrado:", not pg.eval_on_selector("#controls", "e=>e.classList.contains('open')"))
         print("contador:", not pg.eval_on_selector("#hits", "e=>e.hidden"), pg.inner_text("#hitsCount"))
-        print("chips:", pg.eval_on_selector_all("#fCountry .chip", "e=>e.length"), pg.eval_on_selector_all("#fBank .chip", "e=>e.length"))
-        pg.screenshot(path="tools/shot_desktop.png")
+        print("botones solo-icono (mode span oculto):", pg.eval_on_selector("#toggleMode span", "e=>getComputedStyle(e).display==='none'"))
+        print("marcadores:", pg.eval_on_selector_all(".tree-marker", "e=>e.length"), "clústeres:", pg.eval_on_selector_all(".cl", "e=>e.length"))
+        pg.screenshot(path="tools/shot_globe_default.png")
 
-        # fichas + clima (funciones puras)
         info = pg.evaluate("""async () => {
           const d = await (await fetch('data/arboles.json')).json();
           const ex = d.trees.find(t=>t.id==='Cs073');
           const c = await window.getClima(36.93,-1.99);
           return { pop: window.popup(ex), withFicha: d.trees.filter(t=>t.ficha).length, t:c.t };
         }""")
-        print("con ficha:", info["withFicha"], "| popup ficha+clima:", ("ficha-btn" in info["pop"]) and ('class="clima"' in info["pop"]), "| clima t:", info["t"])
-        print("visor:", pg.evaluate("()=>{window.openFicha('Plomo1.png','x');return !document.getElementById('lightbox').hidden;}"))
-        pg.keyboard.press("Escape")
+        print("con ficha:", info["withFicha"], "| popup ok:", ("ficha-btn" in info["pop"]) and ('class="clima"' in info["pop"]), "| clima:", info["t"])
+        print("visor:", pg.evaluate("()=>{window.openFicha('Plomo1.png','x');return !document.getElementById('lightbox').hidden;}")); pg.keyboard.press("Escape")
 
-        # modo pines
+        # globo -> plano
+        pg.click("#toggleGlobe"); time.sleep(1.0)
+        print("tras click globo (debe quedar plano/off):", pg.eval_on_selector("#toggleGlobe","e=>e.classList.contains('on')"))
+        pg.screenshot(path="tools/shot_flat.png")
+
+        # pines
         pg.click("#toggleMode"); time.sleep(0.8)
-        print("pines:", pg.eval_on_selector_all(".tree-pin", "e=>e.length"), "clústeres:", pg.eval_on_selector_all(".cl","e=>e.length"),
-              "| on:", pg.eval_on_selector("#toggleMode","e=>e.classList.contains('on')"))
-        pg.screenshot(path="tools/shot_pins.png")
-
-        # globo
-        pg.click("#toggleGlobe"); time.sleep(1.2)
-        print("globo on:", pg.eval_on_selector("#toggleGlobe","e=>e.classList.contains('on')"), "| marcadores tras globo:", pg.eval_on_selector_all(".tree-pin","e=>e.length"))
-        pg.screenshot(path="tools/shot_globe.png")
-        pg.click("#toggleGlobe"); time.sleep(0.6)   # volver a plano
-        pg.click("#toggleMode"); time.sleep(0.6)     # volver a clúster
+        print("pines:", pg.eval_on_selector_all(".tree-pin","e=>e.length"), "| on:", pg.eval_on_selector("#toggleMode","e=>e.classList.contains('on')"))
+        pg.click("#toggleMode"); time.sleep(0.5)
 
         # filtros / idioma / búsqueda
         pg.click("#toggleFilters"); time.sleep(0.2)
@@ -72,10 +67,17 @@ try:
         print("STATS 1 país:", pg.inner_text("#stats"))
         pg.click('[data-clear="country"]'); time.sleep(0.2)
         pg.click('#lang button[data-lang="en"]'); time.sleep(0.4)
-        print("EN stats:", pg.inner_text("#stats"), "| contador:", pg.inner_text("#hitsCount"), pg.eval_on_selector('#hits [data-i18n=visits]','e=>e.textContent'))
+        print("EN:", pg.inner_text("#stats"))
         pg.click('#lang button[data-lang="es"]')
         pg.fill("#search","Bédar"); time.sleep(0.4)
-        print("STATS 'Bédar':", pg.inner_text("#stats"))
+        print("Bédar:", pg.inner_text("#stats"))
+
+        # móvil
+        pg2 = br.new_page(viewport={"width": 390, "height": 800}, device_scale_factor=2)
+        pg2.route("**/*", handler)
+        pg2.goto(base, wait_until="load", timeout=25000)
+        pg2.wait_for_selector(".tree-marker, .cl", timeout=15000); time.sleep(1.2)
+        pg2.screenshot(path="tools/shot_mobile.png")
 
         br.close()
     print("\nERRORES JS:", errors if errors else "ninguno")

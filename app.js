@@ -64,7 +64,7 @@ const debounce = (fn, ms) => { let h; return (...a) => { clearTimeout(h); h = se
 /* ---------------------------------------------------------------- estado */
 let lang = 'es';
 let mode = 'cluster';          // 'cluster' | 'pins'
-let projection = 'mercator';   // 'mercator' | 'globe'
+let projection = 'globe';      // 'mercator' | 'globe'
 let query = '';
 let allTrees = [], shown = [], byId = {};
 let index = null, markers = {}, popupObj = null;
@@ -77,9 +77,10 @@ const map = new maplibregl.Map({
   attributionControl: false,
   dragRotate: false,
   minZoom: 1.2, maxZoom: 19,
-  center: [-4.5, 36.5], zoom: 5,
+  center: [-3.7, 39.5], zoom: 3.1,        // vista globo inicial centrada en España
   style: {
     version: 8,
+    projection: { type: 'globe' },
     sources: {
       sat: { type: 'raster', tileSize: 256, maxzoom: 19,
         tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
@@ -91,9 +92,15 @@ const map = new maplibregl.Map({
   }
 });
 map.touchZoomRotate.disableRotation();
-map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
+// atribución primero (queda abajo del todo) y luego el zoom encima
 map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
-map.on('load', () => { mapReady = true; start(); });
+map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
+map.on('load', () => {
+  mapReady = true;
+  const a = document.querySelector('.maplibregl-ctrl-attrib');
+  if (a) { a.classList.remove('maplibregl-compact-show'); a.removeAttribute('open'); }
+  start();
+});
 map.on('moveend', () => { if (mode === 'cluster') renderClusters(); });
 map.on('click', () => { if (popupObj) { popupObj.remove(); popupObj = null; } });
 
@@ -243,7 +250,7 @@ function renderClusters() {
           ev.stopPropagation();
           map.easeTo({ center: [lng, lat], zoom: Math.min(index.getClusterExpansionZoom(f.properties.cluster_id), 19) });
         };
-        markers[key] = new maplibregl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map);
+        markers[key] = new maplibregl.Marker({ element: el, opacity: '1', opacityWhenCovered: '0' }).setLngLat([lng, lat]).addTo(map);
       }
     } else {
       const t = byId[f.properties.id], key = 'p' + f.properties.id;
@@ -251,7 +258,7 @@ function renderClusters() {
       if (!markers[key]) {
         const el = dotEl(t);
         el.onclick = ev => { ev.stopPropagation(); openPopup(t, [lng, lat], 12); };
-        markers[key] = new maplibregl.Marker({ element: el }).setLngLat([lng, lat]).addTo(map);
+        markers[key] = new maplibregl.Marker({ element: el, opacity: '1', opacityWhenCovered: '0' }).setLngLat([lng, lat]).addTo(map);
       }
     }
   }
@@ -262,7 +269,7 @@ function renderPins() {
   for (const t of shown) {
     const el = pinEl(t);
     el.onclick = ev => { ev.stopPropagation(); openPopup(t, [t._lon, t._lat], 32); };
-    markers['p' + t.id] = new maplibregl.Marker({ element: el, anchor: 'bottom' }).setLngLat([t._lon, t._lat]).addTo(map);
+    markers['p' + t.id] = new maplibregl.Marker({ element: el, anchor: 'bottom', opacity: '1', opacityWhenCovered: '0' }).setLngLat([t._lon, t._lat]).addTo(map);
   }
 }
 function render() {
@@ -378,7 +385,10 @@ function wire() {
   tg.onclick = () => setPanel(!ctr.classList.contains('open'));
 
   document.getElementById('toggleMode').onclick = () => setMode(mode === 'cluster' ? 'pins' : 'cluster');
-  document.getElementById('toggleGlobe').onclick = () => setGlobe(projection !== 'globe');
+  const gb = document.getElementById('toggleGlobe');
+  gb.classList.toggle('on', projection === 'globe');
+  gb.setAttribute('aria-pressed', projection === 'globe');
+  gb.onclick = () => setGlobe(projection !== 'globe');
 
   document.addEventListener('click', e => { const b = e.target.closest('.ficha-btn'); if (b) openFicha(b.dataset.ficha, b.dataset.cap); });
   document.getElementById('lbClose').onclick = closeFicha;
@@ -386,19 +396,10 @@ function wire() {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeFicha(); });
 }
 
-function fitCore() {
-  const core = allTrees.filter(t => t.lon > -12 && t.lon < 20 && t.lat > 27 && t.lat < 45);
-  if (!core.length) return;
-  let w = 180, s = 90, e = -180, n = -90;
-  for (const t of core) { w = Math.min(w, t._lon); e = Math.max(e, t._lon); s = Math.min(s, t._lat); n = Math.max(n, t._lat); }
-  map.fitBounds([[w, s], [e, n]], { padding: 60, duration: 0 });
-}
-
 function start() {
   if (started || !mapReady || !dataReady) return;
   started = true;
   applyLang();
-  fitCore();
 }
 
 wire();

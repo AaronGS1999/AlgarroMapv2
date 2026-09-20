@@ -77,6 +77,9 @@ html, body {
 .act svg { opacity: .75; }
 .act.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 .act.on svg { opacity: 1; }
+/* botones solo-icono (escritorio y móvil) */
+#toggleMode span, #toggleGlobe span, #repoLink span { display: none; }
+#toggleMode, #toggleGlobe, #repoLink { padding: 6px 9px; }
 .hits { cursor: default; }
 .hits:hover { border-color: var(--border); color: var(--ink); }
 .hits-n { font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -206,9 +209,11 @@ html, body {
 }
 
 @media (max-width: 640px) {
-  .brand { top: 12px; left: 12px; max-width: calc(100vw - 24px); padding: 11px 13px; }
+  .brand { top: 12px; left: 12px; max-width: calc(100vw - 116px); padding: 11px 13px; }
   .brand h1 { font-size: 17px; }
   .brand .tagline { display: none; }
   .topright { top: 12px; right: 12px; }
   .controls { left: 12px; right: 12px; bottom: 12px; width: auto; }
+  #hits [data-i18n="visits"] { display: none; }
+  .act { gap: 4px; }
 }
