@@ -25,12 +25,11 @@ AlgarroMap tiene como objetivo situar en un mapa los algarrobos muestreados por 
 
 ## Contenido del Repositorio
 
-* **`data/arboles.json`**: datos que lee la web (fuente de verdad), con la información de cada árbol y su coordenada en WGS84.
+* **`data/arboles.json`**: datos que lee la web, con la información de cada árbol y su coordenada en WGS84.
 * **`data/arboles.csv`**: los mismos datos en formato CSV.
 * **`Fichas/`**: fichas con información detallada de los individuos muestreados en Almería.
 * **`index.html`, `styles.css`, `app.js`**: la aplicación web (mapa, filtros, búsqueda y fichas), basada en la librería [Leaflet](https://leafletjs.com).
-* **`vendor/`**: Leaflet y Leaflet.markercluster incluidos en el repositorio (sin depender de CDNs externos).
-* **`tools/build_data.py`**: script que regenera y estandariza los datos a partir del Excel de muestreo.
+* **`vendor/`**: Leaflet y Leaflet.markercluster incluidos en el repositorio.
 
 **Cartografía base**: imágenes de satélite de Esri World Imagery, con etiquetas de lugares.
 

@@ -200,12 +200,12 @@ html, body {
 .maplibregl-ctrl-group { background: var(--panel-solid); border: 1px solid var(--border); border-radius: 10px; box-shadow: var(--shadow); overflow: hidden; }
 .maplibregl-ctrl-group button { width: 30px; height: 30px; background: var(--panel-solid); }
 .maplibregl-ctrl-group button + button { border-top: 1px solid var(--border); }
-.maplibregl-ctrl-attrib { background: var(--panel) !important; color: var(--ink-soft); font-size: 10px; border-radius: 8px; }
-.maplibregl-ctrl-attrib a { color: var(--accent); }
-.maplibregl-ctrl-attrib.maplibregl-compact { min-height: 24px; }
+.maplibregl-ctrl-attrib { background: var(--panel-solid) !important; border-radius: 8px; }
+.maplibregl-ctrl-attrib, .maplibregl-ctrl-attrib-inner { color: var(--ink) !important; font-size: 10px; }
+.maplibregl-ctrl-attrib a { color: var(--accent) !important; }
 @media (prefers-color-scheme: dark) {
-  .maplibregl-ctrl-group button .maplibregl-ctrl-icon { filter: invert(1) brightness(1.7); }
-  .maplibregl-ctrl-attrib.maplibregl-compact { background: var(--panel-solid) !important; }
+  .maplibregl-ctrl-group button .maplibregl-ctrl-icon,
+  .maplibregl-ctrl-attrib-button { filter: invert(1) brightness(1.7); }
 }
 
 @media (max-width: 640px) {
