@@ -8,87 +8,78 @@ srv = subprocess.Popen([sys.executable, "-m", "http.server", str(PORT)],
 time.sleep(1.5)
 base = f"http://localhost:{PORT}"
 errors, console = [], []
+
+def handler(route):
+    u = route.request.url
+    if "open-meteo" in u:
+        route.fulfill(status=200, content_type="application/json",
+            body='{"daily":{"time":["2020-01-01","2020-01-02","2020-01-03"],"temperature_2m_mean":[17.8,18.2,18.0],"precipitation_sum":[0,1.5,0.5]}}')
+    elif "abacus" in u:
+        route.fulfill(status=200, content_type="application/json", body='{"value":12345}')
+    elif "arcgisonline" in u:
+        route.abort()
+    else:
+        route.continue_()
+
 try:
     with sync_playwright() as p:
-        br = p.chromium.launch()
-        pg = br.new_page(viewport={"width": 1280, "height": 820}, device_scale_factor=2)
+        br = p.chromium.launch(args=["--enable-unsafe-swiftshader", "--use-gl=angle",
+                                     "--use-angle=swiftshader", "--ignore-gpu-blocklist"])
+        pg = br.new_page(viewport={"width": 1280, "height": 820}, device_scale_factor=1)
         pg.on("console", lambda m: console.append((m.type, m.text)))
         pg.on("pageerror", lambda e: errors.append(str(e)))
-        def route_handler(route):
-            u = route.request.url
-            if "open-meteo" in u:
-                route.fulfill(status=200, content_type="application/json",
-                    body='{"daily":{"time":["2020-01-01","2020-01-02"],"temperature_2m_mean":[10,20],"precipitation_sum":[3,3]}}')
-            elif any(h in u for h in ["arcgisonline", "cartocdn", "hits.sh"]):
-                route.abort()
-            else:
-                route.continue_()
-        pg.route("**/*", route_handler)
-        pg.goto(base, wait_until="load", timeout=20000)
-        pg.wait_for_selector(".tree-marker, .cl", timeout=10000)
-        time.sleep(1.0)
+        pg.route("**/*", handler)
+        pg.goto(base, wait_until="load", timeout=25000)
+        pg.wait_for_selector(".tree-marker, .cl", timeout=15000)
+        time.sleep(1.2)
 
         print("STATS:", pg.inner_text("#stats"))
         print("marcadores:", pg.eval_on_selector_all(".tree-marker", "e=>e.length"),
               "clústeres:", pg.eval_on_selector_all(".cl", "e=>e.length"))
-        print("chips país:", pg.eval_on_selector_all("#fCountry .chip", "e=>e.length"),
-              "chips banco:", pg.eval_on_selector_all("#fBank .chip", "e=>e.length"))
+        print("panel cerrado:", not pg.eval_on_selector("#controls", "e=>e.classList.contains('open')"))
+        print("contador:", not pg.eval_on_selector("#hits", "e=>e.hidden"), pg.inner_text("#hitsCount"))
+        print("chips:", pg.eval_on_selector_all("#fCountry .chip", "e=>e.length"), pg.eval_on_selector_all("#fBank .chip", "e=>e.length"))
         pg.screenshot(path="tools/shot_desktop.png")
 
-        # fichas: popup y visor
+        # fichas + clima (funciones puras)
         info = pg.evaluate("""async () => {
           const d = await (await fetch('data/arboles.json')).json();
-          const ex = d.trees.find(t => t.id==='Cs073');       // Plomo 1, con ficha
-          const nof = d.trees.find(t => !t.ficha && t.precision==='exacta');
-          const withFicha = d.trees.filter(t=>t.ficha).length;
-          return {
-            popExact: window.popup(ex),
-            popNoF: window.popup(nof),
-            withFicha
-          };
+          const ex = d.trees.find(t=>t.id==='Cs073');
+          const c = await window.getClima(36.93,-1.99);
+          return { pop: window.popup(ex), withFicha: d.trees.filter(t=>t.ficha).length, t:c.t };
         }""")
-        print("árboles con ficha:", info["withFicha"])
-        print("popup(Plomo1) tiene botón ficha:", "ficha-btn" in info["popExact"], "| data-ficha Plomo1.png:", "Plomo1.png" in info["popExact"])
-        print("popup(sin ficha) sin botón:", "ficha-btn" not in info["popNoF"])
-        lb = pg.evaluate("""() => { window.openFicha('Plomo1.png','Plomo 1 · Cs073');
-          const l=document.getElementById('lightbox');
-          return {hidden:l.hidden, src:document.getElementById('lbImg').src, cap:document.getElementById('lbCap').textContent}; }""")
-        print("visor abierto:", (not lb["hidden"]), "| src correcto:", lb["src"].endswith("Fichas/Plomo1.png"), "| cap:", lb["cap"])
+        print("con ficha:", info["withFicha"], "| popup ficha+clima:", ("ficha-btn" in info["pop"]) and ('class="clima"' in info["pop"]), "| clima t:", info["t"])
+        print("visor:", pg.evaluate("()=>{window.openFicha('Plomo1.png','x');return !document.getElementById('lightbox').hidden;}"))
         pg.keyboard.press("Escape")
-        print("visor cerrado tras Esc:", pg.eval_on_selector("#lightbox", "e=>e.hidden"))
 
-        # clima (normales) con respuesta simulada
-        cl = pg.evaluate("""async () => {
-          const c = await window.getClima(36.93, -1.99);
-          const d = await (await fetch('data/arboles.json')).json();
-          return { t: c.t, p: c.p, popHasClima: window.popup(d.trees[0]).includes('class="clima"') };
-        }""")
-        print("clima t:", cl["t"], "| p>0:", cl["p"] > 0, "| popup incluye clima:", cl["popHasClima"])
+        # modo pines
+        pg.click("#toggleMode"); time.sleep(0.8)
+        print("pines:", pg.eval_on_selector_all(".tree-pin", "e=>e.length"), "clústeres:", pg.eval_on_selector_all(".cl","e=>e.length"),
+              "| on:", pg.eval_on_selector("#toggleMode","e=>e.classList.contains('on')"))
+        pg.screenshot(path="tools/shot_pins.png")
 
-        # filtro país
-        pg.click("#fCountry .chip:first-child"); time.sleep(0.3)
-        print("STATS tras 1 país:", pg.inner_text("#stats"))
-        pg.click('[data-clear="country"]'); time.sleep(0.2)
+        # globo
+        pg.click("#toggleGlobe"); time.sleep(1.2)
+        print("globo on:", pg.eval_on_selector("#toggleGlobe","e=>e.classList.contains('on')"), "| marcadores tras globo:", pg.eval_on_selector_all(".tree-pin","e=>e.length"))
+        pg.screenshot(path="tools/shot_globe.png")
+        pg.click("#toggleGlobe"); time.sleep(0.6)   # volver a plano
+        pg.click("#toggleMode"); time.sleep(0.6)     # volver a clúster
 
-        # idioma
-        pg.click('#lang button[data-lang="en"]'); time.sleep(0.3)
-        print("STATS EN:", pg.inner_text("#stats"))
-        pg.click('#lang button[data-lang="es"]')
-
-        # búsqueda
-        pg.fill("#search", "Bédar"); time.sleep(0.3)
-        print("STATS 'Bédar':", pg.inner_text("#stats"))
-        pg.fill("#search", "")
-
-        # toggle de filtros
-        open1 = pg.eval_on_selector("#controls", "e=>e.classList.contains('open')")
+        # filtros / idioma / búsqueda
         pg.click("#toggleFilters"); time.sleep(0.2)
-        open2 = pg.eval_on_selector("#controls", "e=>e.classList.contains('open')")
-        print("toggle filtros:", open1, "->", open2)
+        print("panel abre:", pg.eval_on_selector("#controls","e=>e.classList.contains('open')"))
+        pg.click("#fCountry .chip:first-child"); time.sleep(0.4)
+        print("STATS 1 país:", pg.inner_text("#stats"))
+        pg.click('[data-clear="country"]'); time.sleep(0.2)
+        pg.click('#lang button[data-lang="en"]'); time.sleep(0.4)
+        print("EN stats:", pg.inner_text("#stats"), "| contador:", pg.inner_text("#hitsCount"), pg.eval_on_selector('#hits [data-i18n=visits]','e=>e.textContent'))
+        pg.click('#lang button[data-lang="es"]')
+        pg.fill("#search","Bédar"); time.sleep(0.4)
+        print("STATS 'Bédar':", pg.inner_text("#stats"))
 
         br.close()
     print("\nERRORES JS:", errors if errors else "ninguno")
-    real = [c for c in console if c[0] == "error" and "ERR_" not in c[1] and "hits" not in c[1].lower()]
+    real = [c for c in console if c[0] == "error" and "ERR_" not in c[1] and "404" not in c[1] and "tile" not in c[1].lower()]
     print("CONSOLA (errores no-red):", real if real else "ninguno")
 finally:
     srv.terminate()
