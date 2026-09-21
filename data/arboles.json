@@ -1399,7 +1399,7 @@
   {
    "id": "Cs101",
    "code": "101",
-   "name": "'A-14'",
+   "name": "A-14",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1418,7 +1418,7 @@
   {
    "id": "Cs102",
    "code": "102",
-   "name": "'A-19'",
+   "name": "A-19",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1437,7 +1437,7 @@
   {
    "id": "Cs103",
    "code": "103",
-   "name": "'A-23H'",
+   "name": "A-23H",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1456,7 +1456,7 @@
   {
    "id": "Cs104",
    "code": "104",
-   "name": "'A-24H'",
+   "name": "A-24H",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1475,7 +1475,7 @@
   {
    "id": "Cs105",
    "code": "105",
-   "name": "'A-33H'",
+   "name": "A-33H",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1494,7 +1494,7 @@
   {
    "id": "Cs106",
    "code": "106",
-   "name": "'Aida'",
+   "name": "Aida",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "PRT",
@@ -1513,7 +1513,7 @@
   {
    "id": "Cs107",
    "code": "107",
-   "name": "'Albarcara'",
+   "name": "Albarcara",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ITA",
@@ -1532,7 +1532,7 @@
   {
    "id": "Cs108",
    "code": "108",
-   "name": "'Aleixar l'",
+   "name": "Aleixar l",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1551,7 +1551,7 @@
   {
    "id": "Cs109",
    "code": "109",
-   "name": "'Aleixar ll'",
+   "name": "Aleixar ll",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1570,7 +1570,7 @@
   {
    "id": "Cs110",
    "code": "110",
-   "name": "'Amele di Bari'",
+   "name": "Amele di Bari",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ITA",
@@ -1589,7 +1589,7 @@
   {
    "id": "Cs111",
    "code": "111",
-   "name": "'Argelino'",
+   "name": "Argelino",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "DZA",
@@ -1608,7 +1608,7 @@
   {
    "id": "Cs112",
    "code": "112",
-   "name": "'Ariana 1'",
+   "name": "Ariana 1",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "TUN",
@@ -1627,7 +1627,7 @@
   {
    "id": "Cs113",
    "code": "113",
-   "name": "'Aroonshon ll'",
+   "name": "Aroonshon ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ISR",
@@ -1646,7 +1646,7 @@
   {
    "id": "Cs114",
    "code": "114",
-   "name": "'Banks 2'",
+   "name": "Banks 2",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -1665,7 +1665,7 @@
   {
    "id": "Cs115",
    "code": "115",
-   "name": "'Banks 3'",
+   "name": "Banks 3",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -1684,7 +1684,7 @@
   {
    "id": "Cs116",
    "code": "116",
-   "name": "'Banks 4'",
+   "name": "Banks 4",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -1703,7 +1703,7 @@
   {
    "id": "Cs117",
    "code": "117",
-   "name": "'Banya Marra ll'",
+   "name": "Banya Marra ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1722,7 +1722,7 @@
   {
    "id": "Cs118",
    "code": "118",
-   "name": "'Banyeta'",
+   "name": "Banyeta",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1741,7 +1741,7 @@
   {
    "id": "Cs119",
    "code": "119",
-   "name": "'Bargou B-11'",
+   "name": "Bargou B-11",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUN",
@@ -1760,7 +1760,7 @@
   {
    "id": "Cs120",
    "code": "120",
-   "name": "'Benajanafe M-26bis'",
+   "name": "Benajanafe M-26bis",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1779,7 +1779,7 @@
   {
    "id": "Cs121",
    "code": "121",
-   "name": "'Benajarafe L-7'",
+   "name": "Benajarafe L-7",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1798,7 +1798,7 @@
   {
    "id": "Cs122",
    "code": "122",
-   "name": "'Benajarafe M-1'",
+   "name": "Benajarafe M-1",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1817,7 +1817,7 @@
   {
    "id": "Cs123",
    "code": "123",
-   "name": "'Benajarafe M-19'",
+   "name": "Benajarafe M-19",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1836,7 +1836,7 @@
   {
    "id": "Cs124",
    "code": "124",
-   "name": "'Benajarafe M-25'",
+   "name": "Benajarafe M-25",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1855,7 +1855,7 @@
   {
    "id": "Cs125",
    "code": "125",
-   "name": "'Benajarafe M-26'",
+   "name": "Benajarafe M-26",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1874,7 +1874,7 @@
   {
    "id": "Cs126",
    "code": "126",
-   "name": "'Benajarafe M-4'",
+   "name": "Benajarafe M-4",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1893,7 +1893,7 @@
   {
    "id": "Cs127",
    "code": "127",
-   "name": "'Benajarafe M-5'",
+   "name": "Benajarafe M-5",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1912,7 +1912,7 @@
   {
    "id": "Cs128",
    "code": "128",
-   "name": "'Benajarafe N-10'",
+   "name": "Benajarafe N-10",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1931,7 +1931,7 @@
   {
    "id": "Cs129",
    "code": "129",
-   "name": "'Benajarafe N-4'",
+   "name": "Benajarafe N-4",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1950,7 +1950,7 @@
   {
    "id": "Cs130",
    "code": "130",
-   "name": "'Blanca'",
+   "name": "Blanca",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1969,7 +1969,7 @@
   {
    "id": "Cs131",
    "code": "131",
-   "name": "'Bobal'",
+   "name": "Bobal",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -1988,7 +1988,7 @@
   {
    "id": "Cs132",
    "code": "132",
-   "name": "'Bord Gaieta'",
+   "name": "Bord Gaieta",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2007,7 +2007,7 @@
   {
    "id": "Cs133",
    "code": "133",
-   "name": "'Bord Granja'",
+   "name": "Bord Granja",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2026,7 +2026,7 @@
   {
    "id": "Cs134",
    "code": "134",
-   "name": "'Bugadera ll'",
+   "name": "Bugadera ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2045,7 +2045,7 @@
   {
    "id": "Cs135",
    "code": "135",
-   "name": "'C.V.T.'",
+   "name": "C.V.T.",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -2064,7 +2064,7 @@
   {
    "id": "Cs136",
    "code": "136",
-   "name": "'Cacha'",
+   "name": "Cacha",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2102,7 +2102,7 @@
   {
    "id": "Cs138",
    "code": "138",
-   "name": "'Calabrese'",
+   "name": "Calabrese",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ITA",
@@ -2121,7 +2121,7 @@
   {
    "id": "Cs139",
    "code": "139",
-   "name": "'Carrubello'",
+   "name": "Carrubello",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ITA",
@@ -2140,7 +2140,7 @@
   {
    "id": "Cs140",
    "code": "140",
-   "name": "'Casares'",
+   "name": "Casares",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2159,7 +2159,7 @@
   {
    "id": "Cs141",
    "code": "141",
-   "name": "'Casuda'",
+   "name": "Casuda",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2178,7 +2178,7 @@
   {
    "id": "Cs142",
    "code": "142",
-   "name": "'Celia l'",
+   "name": "Celia l",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2197,7 +2197,7 @@
   {
    "id": "Cs143",
    "code": "143",
-   "name": "'Celia ll'",
+   "name": "Celia ll",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2216,7 +2216,7 @@
   {
    "id": "Cs144",
    "code": "144",
-   "name": "'Cliffort'",
+   "name": "Cliffort",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "USA",
@@ -2235,7 +2235,7 @@
   {
    "id": "Cs145",
    "code": "145",
-   "name": "'Collins'",
+   "name": "Collins",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -2254,7 +2254,7 @@
   {
    "id": "Cs146",
    "code": "146",
-   "name": "'Comuna' (A-7H)",
+   "name": "Comuna (A-7H)",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2273,7 +2273,7 @@
   {
    "id": "Cs147",
    "code": "147",
-   "name": "'Consorsi'",
+   "name": "Consorsi",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2292,7 +2292,7 @@
   {
    "id": "Cs148",
    "code": "148",
-   "name": "'Cordoba'",
+   "name": "Cordoba",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2311,7 +2311,7 @@
   {
    "id": "Cs149",
    "code": "149",
-   "name": "'Coripe ll'",
+   "name": "Coripe ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2330,7 +2330,7 @@
   {
    "id": "Cs150",
    "code": "150",
-   "name": "'Coripe lll'",
+   "name": "Coripe lll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2349,7 +2349,7 @@
   {
    "id": "Cs151",
    "code": "151",
-   "name": "'Corona'",
+   "name": "Corona",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2368,7 +2368,7 @@
   {
    "id": "Cs152",
    "code": "152",
-   "name": "'Costa da vaca'",
+   "name": "Costa da vaca",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "PRT",
@@ -2387,7 +2387,7 @@
   {
    "id": "Cs153",
    "code": "153",
-   "name": "'Costella de burro'",
+   "name": "Costella de burro",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2406,7 +2406,7 @@
   {
    "id": "Cs154",
    "code": "154",
-   "name": "Costella de Ruc'",
+   "name": "Costella de Ruc",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2425,7 +2425,7 @@
   {
    "id": "Cs155",
    "code": "155",
-   "name": "'Costella Mallorca'",
+   "name": "Costella Mallorca",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2444,7 +2444,7 @@
   {
    "id": "Cs156",
    "code": "156",
-   "name": "'Costillenta'",
+   "name": "Costillenta",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2463,7 +2463,7 @@
   {
    "id": "Cs157",
    "code": "157",
-   "name": "'Cuartiella'",
+   "name": "Cuartiella",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2482,7 +2482,7 @@
   {
    "id": "Cs158",
    "code": "158",
-   "name": "'De la mel ll'",
+   "name": "De la mel ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2501,7 +2501,7 @@
   {
    "id": "Cs159",
    "code": "159",
-   "name": "'De la Peña'",
+   "name": "De la Peña",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2520,7 +2520,7 @@
   {
    "id": "Cs160",
    "code": "160",
-   "name": "'Del Masclet' (CS-5H)",
+   "name": "Del Masclet (CS-5H)",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2539,7 +2539,7 @@
   {
    "id": "Cs161",
    "code": "161",
-   "name": "D'en Pau'",
+   "name": "Den Pau",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2558,7 +2558,7 @@
   {
    "id": "Cs162",
    "code": "162",
-   "name": "'Dolça Valenciana'",
+   "name": "Dolça Valenciana",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2577,7 +2577,7 @@
   {
    "id": "Cs163",
    "code": "163",
-   "name": "'E-1'",
+   "name": "E-1",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -2596,7 +2596,7 @@
   {
    "id": "Cs164",
    "code": "164",
-   "name": "'E-2'",
+   "name": "E-2",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -2615,7 +2615,7 @@
   {
    "id": "Cs165",
    "code": "165",
-   "name": "'E-3'",
+   "name": "E-3",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -2634,7 +2634,7 @@
   {
    "id": "Cs166",
    "code": "166",
-   "name": "'Fina'",
+   "name": "Fina",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2653,7 +2653,7 @@
   {
    "id": "Cs167",
    "code": "167",
-   "name": "'Flor de llaurer'",
+   "name": "Flor de llaurer",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2672,7 +2672,7 @@
   {
    "id": "Cs168",
    "code": "168",
-   "name": "'Fonoll'",
+   "name": "Fonoll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2691,7 +2691,7 @@
   {
    "id": "Cs169",
    "code": "169",
-   "name": "'Font Garrover'",
+   "name": "Font Garrover",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2710,7 +2710,7 @@
   {
    "id": "Cs170",
    "code": "170",
-   "name": "'Fornera'",
+   "name": "Fornera",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2729,7 +2729,7 @@
   {
    "id": "Cs171",
    "code": "171",
-   "name": "'Gabriel'",
+   "name": "Gabriel",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "USA",
@@ -2748,7 +2748,7 @@
   {
    "id": "Cs172",
    "code": "172",
-   "name": "'Galhosa ll'",
+   "name": "Galhosa ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "PRT",
@@ -2767,7 +2767,7 @@
   {
    "id": "Cs173",
    "code": "173",
-   "name": "'Gastor l'",
+   "name": "Gastor l",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2786,7 +2786,7 @@
   {
    "id": "Cs174",
    "code": "174",
-   "name": "'Gastor ll'",
+   "name": "Gastor ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2805,7 +2805,7 @@
   {
    "id": "Cs175",
    "code": "175",
-   "name": "'Gastor lll'",
+   "name": "Gastor lll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2824,7 +2824,7 @@
   {
    "id": "Cs176",
    "code": "176",
-   "name": "'Gata' (GN-7H)",
+   "name": "Gata (GN-7H)",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2843,7 +2843,7 @@
   {
    "id": "Cs177",
    "code": "177",
-   "name": "'Granja'",
+   "name": "Granja",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2862,7 +2862,7 @@
   {
    "id": "Cs178",
    "code": "178",
-   "name": "'Herta-Ubrique'",
+   "name": "Herta-Ubrique",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2881,7 +2881,7 @@
   {
    "id": "Cs179",
    "code": "179",
-   "name": "'Hornachuelos'",
+   "name": "Hornachuelos",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -2938,7 +2938,7 @@
   {
    "id": "Cs182",
    "code": "182",
-   "name": "'Impollinatrice'",
+   "name": "Impollinatrice",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ITA",
@@ -2957,7 +2957,7 @@
   {
    "id": "Cs183",
    "code": "183",
-   "name": "'Jhadou J-3'",
+   "name": "Jhadou J-3",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUN",
@@ -2995,7 +2995,7 @@
   {
    "id": "Cs185",
    "code": "185",
-   "name": "'Komiski'",
+   "name": "Komiski",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "HRV",
@@ -3014,7 +3014,7 @@
   {
    "id": "Cs186",
    "code": "186",
-   "name": "'Koundourka'",
+   "name": "Koundourka",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "CYP",
@@ -3033,7 +3033,7 @@
   {
    "id": "Cs187",
    "code": "187",
-   "name": "'L-33' (F-15H)",
+   "name": "L-33 (F-15H)",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3052,7 +3052,7 @@
   {
    "id": "Cs188",
    "code": "188",
-   "name": "'Lindar'",
+   "name": "Lindar",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3071,7 +3071,7 @@
   {
    "id": "Cs189",
    "code": "189",
-   "name": "'Llei d'Aldover'",
+   "name": "Llei dAldover",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3090,7 +3090,7 @@
   {
    "id": "Cs190",
    "code": "190",
-   "name": "'Logoinha'",
+   "name": "Logoinha",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "PRT",
@@ -3109,7 +3109,7 @@
   {
    "id": "Cs191",
    "code": "191",
-   "name": "'M-5H'",
+   "name": "M-5H",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3128,7 +3128,7 @@
   {
    "id": "Cs192",
    "code": "192",
-   "name": "'Macho-1 Benajarafe'",
+   "name": "Macho-1 Benajarafe",
    "sex": "Macho",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3147,7 +3147,7 @@
   {
    "id": "Cs193",
    "code": "193",
-   "name": "'Macho-2 Benajarafe'",
+   "name": "Macho-2 Benajarafe",
    "sex": "Macho",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3166,7 +3166,7 @@
   {
    "id": "Cs194",
    "code": "194",
-   "name": "Mallorca 2-12' / E-13p (H2-12)",
+   "name": "Mallorca 2-12 / E-13p (H2-12)",
    "sex": "Hemafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3185,7 +3185,7 @@
   {
    "id": "Cs195",
    "code": "195",
-   "name": "'Mallorquina V-19H'",
+   "name": "Mallorquina V-19H",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3204,7 +3204,7 @@
   {
    "id": "Cs196",
    "code": "196",
-   "name": "'Marshall-5'",
+   "name": "Marshall-5",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -3223,7 +3223,7 @@
   {
    "id": "Cs197",
    "code": "197",
-   "name": "'Marshall-9'",
+   "name": "Marshall-9",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "AUS",
@@ -3242,7 +3242,7 @@
   {
    "id": "Cs198",
    "code": "198",
-   "name": "'Marti l'",
+   "name": "Marti l",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3261,7 +3261,7 @@
   {
    "id": "Cs199",
    "code": "199",
-   "name": "'Marti ll'",
+   "name": "Marti ll",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3280,7 +3280,7 @@
   {
    "id": "Cs200",
    "code": "200",
-   "name": "'Matalafera Bugarra'",
+   "name": "Matalafera Bugarra",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3299,7 +3299,7 @@
   {
    "id": "Cs201",
    "code": "201",
-   "name": "'Matalafera Soneja' (Cs-23)",
+   "name": "Matalafera Soneja (Cs-23)",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3337,7 +3337,7 @@
   {
    "id": "Cs203",
    "code": "203",
-   "name": "'MA-V'",
+   "name": "MA-V",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -3356,7 +3356,7 @@
   {
    "id": "Cs204",
    "code": "204",
-   "name": "'MA-Vl'",
+   "name": "MA-Vl",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -3375,7 +3375,7 @@
   {
    "id": "Cs205",
    "code": "205",
-   "name": "'MA-X'",
+   "name": "MA-X",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -3394,7 +3394,7 @@
   {
    "id": "Cs206",
    "code": "206",
-   "name": "'MA-Xl'",
+   "name": "MA-Xl",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -3413,7 +3413,7 @@
   {
    "id": "Cs207",
    "code": "207",
-   "name": "'Melera'",
+   "name": "Melera",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3432,7 +3432,7 @@
   {
    "id": "Cs208",
    "code": "208",
-   "name": "'Melich l'",
+   "name": "Melich l",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3451,7 +3451,7 @@
   {
    "id": "Cs209",
    "code": "209",
-   "name": "'Melich ll'",
+   "name": "Melich ll",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3489,7 +3489,7 @@
   {
    "id": "Cs211",
    "code": "211",
-   "name": "'Mina ll'",
+   "name": "Mina ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3508,7 +3508,7 @@
   {
    "id": "Cs212",
    "code": "212",
-   "name": "'Mixto Bosch'",
+   "name": "Mixto Bosch",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3527,7 +3527,7 @@
   {
    "id": "Cs213",
    "code": "213",
-   "name": "'Mixto Princep'",
+   "name": "Mixto Princep",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3546,7 +3546,7 @@
   {
    "id": "Cs214",
    "code": "214",
-   "name": "'Mixto Regues'",
+   "name": "Mixto Regues",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3565,7 +3565,7 @@
   {
    "id": "Cs215",
    "code": "215",
-   "name": "'Mixto Salvado'",
+   "name": "Mixto Salvado",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3584,7 +3584,7 @@
   {
    "id": "Cs216",
    "code": "216",
-   "name": "'Mollar-l'",
+   "name": "Mollar-l",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3603,7 +3603,7 @@
   {
    "id": "Cs217",
    "code": "217",
-   "name": "'Mollar-ll'",
+   "name": "Mollar-ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3622,7 +3622,7 @@
   {
    "id": "Cs218",
    "code": "218",
-   "name": "'Mulata do Espargal'",
+   "name": "Mulata do Espargal",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "PRT",
@@ -3641,7 +3641,7 @@
   {
    "id": "Cs219",
    "code": "219",
-   "name": "'Mulata l'",
+   "name": "Mulata l",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "PRT",
@@ -3660,7 +3660,7 @@
   {
    "id": "Cs220",
    "code": "220",
-   "name": "'Negra A-1'",
+   "name": "Negra A-1",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3679,7 +3679,7 @@
   {
    "id": "Cs221",
    "code": "221",
-   "name": "'Negral'",
+   "name": "Negral",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3698,7 +3698,7 @@
   {
    "id": "Cs222",
    "code": "222",
-   "name": "'Negrita Grazalema'",
+   "name": "Negrita Grazalema",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3717,7 +3717,7 @@
   {
    "id": "Cs223",
    "code": "223",
-   "name": "'Nomag'",
+   "name": "Nomag",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUN",
@@ -3736,7 +3736,7 @@
   {
    "id": "Cs224",
    "code": "224",
-   "name": "'Ojen-Cajiz ll'",
+   "name": "Ojen-Cajiz ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3755,7 +3755,7 @@
   {
    "id": "Cs225",
    "code": "225",
-   "name": "'P-16'",
+   "name": "P-16",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUR",
@@ -3774,7 +3774,7 @@
   {
    "id": "Cs226",
    "code": "226",
-   "name": "'Pere Gelabert ll'",
+   "name": "Pere Gelabert ll",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3812,7 +3812,7 @@
   {
    "id": "Cs228",
    "code": "228",
-   "name": "'Pic d'abella ll'",
+   "name": "Pic dabella ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3831,7 +3831,7 @@
   {
    "id": "Cs229",
    "code": "229",
-   "name": "'Pizarra'",
+   "name": "Pizarra",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3850,7 +3850,7 @@
   {
    "id": "Cs230",
    "code": "230",
-   "name": "'Puigdelfi l'",
+   "name": "Puigdelfi l",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3869,7 +3869,7 @@
   {
    "id": "Cs231",
    "code": "231",
-   "name": "'Puigdelfi lll'",
+   "name": "Puigdelfi lll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3888,7 +3888,7 @@
   {
    "id": "Cs232",
    "code": "232",
-   "name": "'Punt Ingles'",
+   "name": "Punt Ingles",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3907,7 +3907,7 @@
   {
    "id": "Cs233",
    "code": "233",
-   "name": "'Ramillete ll'",
+   "name": "Ramillete ll",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3926,7 +3926,7 @@
   {
    "id": "Cs234",
    "code": "234",
-   "name": "'Roja Ibiza'",
+   "name": "Roja Ibiza",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3945,7 +3945,7 @@
   {
    "id": "Cs235",
    "code": "235",
-   "name": "'Roja Mallorca'",
+   "name": "Roja Mallorca",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3964,7 +3964,7 @@
   {
    "id": "Cs236",
    "code": "236",
-   "name": "'Roja sa Pobla'",
+   "name": "Roja sa Pobla",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -3983,7 +3983,7 @@
   {
    "id": "Cs237",
    "code": "237",
-   "name": "'Rojal Castello'",
+   "name": "Rojal Castello",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4002,7 +4002,7 @@
   {
    "id": "Cs238",
    "code": "238",
-   "name": "'Ronda l'",
+   "name": "Ronda l",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4021,7 +4021,7 @@
   {
    "id": "Cs239",
    "code": "239",
-   "name": "'Ronda ll'",
+   "name": "Ronda ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4040,7 +4040,7 @@
   {
    "id": "Cs240",
    "code": "240",
-   "name": "'Ronda lll'",
+   "name": "Ronda lll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4059,7 +4059,7 @@
   {
    "id": "Cs241",
    "code": "241",
-   "name": "'Rossa ll'",
+   "name": "Rossa ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4078,7 +4078,7 @@
   {
    "id": "Cs242",
    "code": "242",
-   "name": "'Roya Cs-22'",
+   "name": "Roya Cs-22",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4097,7 +4097,7 @@
   {
    "id": "Cs243",
    "code": "243",
-   "name": "'Rubies'",
+   "name": "Rubies",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4116,7 +4116,7 @@
   {
    "id": "Cs244",
    "code": "244",
-   "name": "'San Miguel Salinas' (SMS)",
+   "name": "San Miguel Salinas (SMS)",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4135,7 +4135,7 @@
   {
    "id": "Cs245",
    "code": "245",
-   "name": "'Santa Maria'",
+   "name": "Santa Maria",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4154,7 +4154,7 @@
   {
    "id": "Cs246",
    "code": "246",
-   "name": "'Sayalonga'",
+   "name": "Sayalonga",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4173,7 +4173,7 @@
   {
    "id": "Cs247",
    "code": "247",
-   "name": "'Sfax'",
+   "name": "Sfax",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUN",
@@ -4192,7 +4192,7 @@
   {
    "id": "Cs248",
    "code": "248",
-   "name": "S'Hort des mestres'",
+   "name": "SHort des mestres",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4211,7 +4211,7 @@
   {
    "id": "Cs249",
    "code": "249",
-   "name": "'T-1'",
+   "name": "T-1",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "MAR",
@@ -4230,7 +4230,7 @@
   {
    "id": "Cs250",
    "code": "250",
-   "name": "'Tendral'",
+   "name": "Tendral",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4249,7 +4249,7 @@
   {
    "id": "Cs251",
    "code": "251",
-   "name": "'Tio Clarito'",
+   "name": "Tio Clarito",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4268,7 +4268,7 @@
   {
    "id": "Cs252",
    "code": "252",
-   "name": "'Traiguera'",
+   "name": "Traiguera",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4287,7 +4287,7 @@
   {
    "id": "Cs253",
    "code": "253",
-   "name": "'Turquia-1'",
+   "name": "Turquia-1",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUR",
@@ -4306,7 +4306,7 @@
   {
    "id": "Cs254",
    "code": "254",
-   "name": "'Turquia-2'",
+   "name": "Turquia-2",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUR",
@@ -4325,7 +4325,7 @@
   {
    "id": "Cs255",
    "code": "255",
-   "name": "'Turquia-81'",
+   "name": "Turquia-81",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "TUR",
@@ -4344,7 +4344,7 @@
   {
    "id": "Cs256",
    "code": "256",
-   "name": "'Tylliria l'",
+   "name": "Tylliria l",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "CYP",
@@ -4363,7 +4363,7 @@
   {
    "id": "Cs257",
    "code": "257",
-   "name": "'Tylliria ll'",
+   "name": "Tylliria ll",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "CYP",
@@ -4401,7 +4401,7 @@
   {
    "id": "Cs259",
    "code": "259",
-   "name": "'Uraiona'",
+   "name": "Uraiona",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4420,7 +4420,7 @@
   {
    "id": "Cs260",
    "code": "260",
-   "name": "'Valencia'",
+   "name": "Valencia",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4439,7 +4439,7 @@
   {
    "id": "Cs261",
    "code": "261",
-   "name": "'Vera'",
+   "name": "Vera",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4458,7 +4458,7 @@
   {
    "id": "Cs262",
    "code": "262",
-   "name": "'Vera Mallorca'",
+   "name": "Vera Mallorca",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4477,7 +4477,7 @@
   {
    "id": "Cs263",
    "code": "263",
-   "name": "'Vermella'",
+   "name": "Vermella",
    "sex": "Hembra",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -4496,7 +4496,7 @@
   {
    "id": "Cs264",
    "code": "264",
-   "name": "'Vives l'",
+   "name": "Vives l",
    "sex": "Hermafrodita",
    "bank": "Tarragona",
    "origin": "ESP",
@@ -6822,12 +6822,12 @@
    "country": "ESP",
    "wild": "silvestre",
    "wild_raw": "silvestre",
-   "lat": 37.1,
-   "lon": -2.35,
-   "precision": "aproximada",
-   "coord_source": "Ubicación representativa de la región de origen",
-   "region_label": "Región: Almería",
-   "confidence": "media",
+   "lat": 37.098753,
+   "lon": -2.078197,
+   "precision": "exacta",
+   "coord_source": "Banco Almería (GPS de campo)",
+   "region_label": null,
+   "confidence": null,
    "ficha": null
   }
  ]
