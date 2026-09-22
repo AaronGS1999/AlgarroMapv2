@@ -50,7 +50,7 @@ const WILD = {
   'no cultivado actualmente': ['No cultivado actualmente', 'Not currently cultivated'],
   desconocido: ['Desconocido', 'Unknown']
 };
-const SEX = { macho: ['Macho', 'Male'], hembra: ['Hembra', 'Female'], hermafrodita: ['Hermafrodita', 'Hermaphrodite'] };
+const SEX = { macho: ['Macho', 'Male'], hembra: ['Hembra', 'Female'], hermafrodita: ['Hermafrodita', 'Hermaphrodite'], indeterminado: ['Indeterminado', 'Undetermined'] };
 const FICHAS_DIR = 'Fichas/';
 const HITS_URL = 'https://abacus.jasoncameron.dev/hit/aarongs1999.github.io/algarromapv2';
 const PIN_SVG = '<svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg">' +
@@ -68,6 +68,7 @@ function sexCats(v) {
   if (s.includes('hemb') || s.includes('femin') || s.includes('femen')) out.push('hembra');
   if (s.includes('macho') || s.includes('mascul')) out.push('macho');
   if (s.includes('frodit') || s.includes('afodit')) out.push('hermafrodita');
+  if (!out.length && s) out.push('indeterminado'); // tiene valor pero no encaja en las tres
   return out;
 }
 
@@ -319,7 +320,7 @@ function chip(dim, value, label, count) {
   return b;
 }
 function buildFilters() {
-  const byCountry = {}, byBank = {}, bySex = { macho: 0, hembra: 0, hermafrodita: 0 };
+  const byCountry = {}, byBank = {}, bySex = { macho: 0, hembra: 0, hermafrodita: 0, indeterminado: 0 };
   for (const t of allTrees) {
     if (t.country) byCountry[t.country] = (byCountry[t.country] || 0) + 1;
     if (t.bank) byBank[t.bank] = (byBank[t.bank] || 0) + 1;
@@ -333,7 +334,7 @@ function buildFilters() {
   };
   put('fCountry', Object.keys(byCountry).sort((a, b) => byCountry[b] - byCountry[a]).map(k => ['country', k, tr(COUNTRY, k, k), byCountry[k]]));
   put('fBank', Object.keys(byBank).sort((a, b) => byBank[b] - byBank[a]).map(k => ['bank', k, tr(BANK, k, k), byBank[k]]));
-  put('fSex', ['hembra', 'macho', 'hermafrodita'].filter(k => bySex[k]).map(k => ['sex', k, tr(SEX, k, k), bySex[k]]));
+  put('fSex', ['hembra', 'macho', 'hermafrodita', 'indeterminado'].filter(k => bySex[k]).map(k => ['sex', k, tr(SEX, k, k), bySex[k]]));
 }
 function applyLang() {
   document.documentElement.lang = lang;
@@ -362,6 +363,7 @@ function loadHits() {
 
 /* ---------------------------------------------------------------- fichas */
 function openFicha(file, cap) {
+  if (!file) return;
   document.getElementById('lbImg').src = FICHAS_DIR + file;
   document.getElementById('lbCap').textContent = cap || '';
   document.getElementById('lightbox').hidden = false;
@@ -409,7 +411,7 @@ function wire() {
   gb.setAttribute('aria-pressed', projection === 'globe');
   gb.onclick = () => setGlobe(projection !== 'globe');
 
-  document.addEventListener('click', e => { const b = e.target.closest('.ficha-btn'); if (b) openFicha(b.dataset.ficha, b.dataset.cap); });
+  document.addEventListener('click', e => { const b = e.target.closest('.ficha-btn[data-ficha]'); if (b) openFicha(b.dataset.ficha, b.dataset.cap); });
   document.getElementById('lbClose').onclick = closeFicha;
   document.getElementById('lightbox').addEventListener('click', e => { if (e.target.id === 'lightbox') closeFicha(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeFicha(); });
