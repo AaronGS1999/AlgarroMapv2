@@ -5,7 +5,7 @@ const T = {
   es: {
     tagline: 'Localización de los algarrobos muestreados por el grupo BIO-359: Genómica Evolutiva de Plantas',
     filters: 'Filtros', all: 'Todos', mode: 'Pines', globe: 'Globo', visits: 'Visitas',
-    f_country: 'País / región', f_bank: 'Banco',
+    f_country: 'País / región', f_bank: 'Banco', f_sex: 'Sexo', gmaps: 'Google Maps',
     search_ph: 'Buscar por nombre o código…',
     lg_exact: 'Coordenada exacta (GPS)', lg_approx: 'Ubicación aproximada',
     lg_note: 'Cuando no se conoce la posición exacta, se usa el centroide de la región conocida más precisa.',
@@ -20,7 +20,7 @@ const T = {
   en: {
     tagline: 'Sampling locations of the carob trees by the BIO-359 group: Plant Evolutionary Genomics',
     filters: 'Filters', all: 'All', mode: 'Pins', globe: 'Globe', visits: 'Visits',
-    f_country: 'Country / region', f_bank: 'Collection',
+    f_country: 'Country / region', f_bank: 'Collection', f_sex: 'Sex', gmaps: 'Google Maps',
     search_ph: 'Search by name or code…',
     lg_exact: 'Exact coordinate (GPS)', lg_approx: 'Approximate location',
     lg_note: 'When the exact position is unknown, the centroid of the most precise known region is used.',
@@ -50,6 +50,7 @@ const WILD = {
   'no cultivado actualmente': ['No cultivado actualmente', 'Not currently cultivated'],
   desconocido: ['Desconocido', 'Unknown']
 };
+const SEX = { macho: ['Macho', 'Male'], hembra: ['Hembra', 'Female'], hermafrodita: ['Hermafrodita', 'Hermaphrodite'] };
 const FICHAS_DIR = 'Fichas/';
 const HITS_URL = 'https://abacus.jasoncameron.dev/hit/aarongs1999.github.io/algarromapv2';
 const PIN_SVG = '<svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg">' +
@@ -61,6 +62,15 @@ const fold = s => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase
 const tr = (m, k, f) => (m[k] && m[k][lang === 'es' ? 0 : 1]) || f || k;
 const debounce = (fn, ms) => { let h; return (...a) => { clearTimeout(h); h = setTimeout(() => fn(...a), ms); }; };
 
+// el campo Sexo trae valores variados (Feminina, Masculina, Hemafodita…); los reduce a categorías
+function sexCats(v) {
+  const s = fold(v), out = [];
+  if (s.includes('hemb') || s.includes('femin') || s.includes('femen')) out.push('hembra');
+  if (s.includes('macho') || s.includes('mascul')) out.push('macho');
+  if (s.includes('frodit') || s.includes('afodit')) out.push('hermafrodita');
+  return out;
+}
+
 /* ---------------------------------------------------------------- estado */
 let lang = 'es';
 let mode = 'cluster';          // 'cluster' | 'pins'
@@ -69,7 +79,7 @@ let query = '';
 let allTrees = [], shown = [], byId = {};
 let index = null, markers = {}, popupObj = null;
 let hitsValue = null, mapReady = false, dataReady = false, started = false;
-const active = { country: new Set(), bank: new Set() };
+const active = { country: new Set(), bank: new Set(), sex: new Set() };
 
 /* ---------------------------------------------------------------- mapa */
 const map = new maplibregl.Map({
@@ -208,6 +218,8 @@ function popup(t) {
   const btn = t.ficha
     ? `<button class="ficha-btn" data-ficha="${esc(t.ficha)}" data-cap="${esc((t.name || '') + ' · ' + t.id)}">${L18.ficha}</button>`
     : '';
+  const gmaps = `<a class="ficha-btn ghost" href="https://www.google.com/maps/search/?api=1&query=${t.lat},${t.lon}" target="_blank" rel="noopener">` +
+    `<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>${L18.gmaps}</a>`;
   return `<div class="pop">
     <h3>${esc(t.name || t.id)}</h3>
     <span class="code">${esc(t.id)}</span>
@@ -215,7 +227,7 @@ function popup(t) {
     <dl>${dl}</dl>
     <p class="src">${src}</p>
     <div class="clima" data-lat="${t.lat}" data-lon="${t.lon}"><span class="clima-load">${L18.clima_load}</span></div>
-    ${btn}
+    ${gmaps}${btn}
   </div>`;
 }
 function openPopup(t, lngLat, offset) {
@@ -288,6 +300,7 @@ function render() {
 function passes(t) {
   if (active.country.size && !active.country.has(t.country)) return false;
   if (active.bank.size && !active.bank.has(t.bank)) return false;
+  if (active.sex.size && !(t._sex || []).some(c => active.sex.has(c))) return false;
   if (query) {
     const q = fold(query);
     if (!fold(t.name).includes(q) && !fold(t.id).includes(q) && !fold(t.code).includes(q)) return false;
@@ -306,15 +319,17 @@ function chip(dim, value, label, count) {
   return b;
 }
 function buildFilters() {
-  const byCountry = {}, byBank = {};
+  const byCountry = {}, byBank = {}, bySex = { macho: 0, hembra: 0, hermafrodita: 0 };
   for (const t of allTrees) {
     if (t.country) byCountry[t.country] = (byCountry[t.country] || 0) + 1;
     if (t.bank) byBank[t.bank] = (byBank[t.bank] || 0) + 1;
+    for (const c of (t._sex || [])) bySex[c]++;
   }
-  const cEl = document.getElementById('fCountry'), bEl = document.getElementById('fBank');
-  cEl.innerHTML = ''; bEl.innerHTML = '';
+  const cEl = document.getElementById('fCountry'), bEl = document.getElementById('fBank'), sEl = document.getElementById('fSex');
+  cEl.innerHTML = ''; bEl.innerHTML = ''; sEl.innerHTML = '';
   Object.keys(byCountry).sort((a, b) => byCountry[b] - byCountry[a]).forEach(k => cEl.appendChild(chip('country', k, tr(COUNTRY, k, k), byCountry[k])));
   Object.keys(byBank).sort((a, b) => byBank[b] - byBank[a]).forEach(k => bEl.appendChild(chip('bank', k, tr(BANK, k, k), byBank[k])));
+  ['hembra', 'macho', 'hermafrodita'].forEach(k => { if (bySex[k]) sEl.appendChild(chip('sex', k, tr(SEX, k, k), bySex[k])); });
 }
 function applyLang() {
   document.documentElement.lang = lang;
@@ -410,7 +425,7 @@ fetch('data/arboles.json')
   .then(d => {
     allTrees = (d.trees || d).filter(t => typeof t.lat === 'number' && typeof t.lon === 'number');
     byId = {};
-    for (const t of allTrees) byId[t.id] = t;
+    for (const t of allTrees) { byId[t.id] = t; t._sex = sexCats(t.sex); }
     spread(allTrees);
     dataReady = true;
     start();

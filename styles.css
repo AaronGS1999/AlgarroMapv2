@@ -183,6 +183,8 @@ html, body {
   border-radius: 10px; padding: 8px 12px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer;
 }
 .pop .ficha-btn:hover { filter: brightness(1.05); }
+.pop .ficha-btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--border); text-decoration: none; }
+.pop .ficha-btn.ghost:hover { filter: none; border-color: var(--accent); }
 
 /* visor de fichas */
 .lightbox {
