@@ -78,7 +78,7 @@ let projection = 'globe';      // 'mercator' | 'globe'
 let query = '';
 let allTrees = [], shown = [], byId = {};
 let index = null, markers = {}, popupObj = null;
-let hitsValue = null, mapReady = false, dataReady = false, started = false;
+let hitsValue = null, dataReady = false, started = false;
 const active = { country: new Set(), bank: new Set(), sex: new Set() };
 
 /* ---------------------------------------------------------------- mapa */
@@ -106,10 +106,9 @@ map.touchZoomRotate.disableRotation();
 map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
 map.on('load', () => {
-  mapReady = true;
   const a = document.querySelector('.maplibregl-ctrl-attrib');
   if (a) { a.classList.remove('maplibregl-compact-show'); a.removeAttribute('open'); }
-  start();
+  if (started) render();   // con el mapa ya pintado, refresca los marcadores
 });
 map.on('moveend', () => { if (mode === 'cluster') renderClusters(); });
 map.on('click', () => { if (popupObj) { popupObj.remove(); popupObj = null; } });
@@ -218,7 +217,8 @@ function popup(t) {
   const btn = t.ficha
     ? `<button class="ficha-btn" data-ficha="${esc(t.ficha)}" data-cap="${esc((t.name || '') + ' · ' + t.id)}">${L18.ficha}</button>`
     : '';
-  const gmaps = `<a class="ficha-btn ghost" href="https://www.google.com/maps/search/?api=1&query=${t.lat},${t.lon}" target="_blank" rel="noopener">` +
+  const gz = t.precision === 'exacta' ? 18 : 11;
+  const gmaps = `<a class="ficha-btn ghost" href="https://www.google.com/maps/place/${t.lat},${t.lon}/@${t.lat},${t.lon},${gz}z/data=!3m1!1e3" target="_blank" rel="noopener">` +
     `<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>${L18.gmaps}</a>`;
   return `<div class="pop">
     <h3>${esc(t.name || t.id)}</h3>
@@ -325,11 +325,15 @@ function buildFilters() {
     if (t.bank) byBank[t.bank] = (byBank[t.bank] || 0) + 1;
     for (const c of (t._sex || [])) bySex[c]++;
   }
-  const cEl = document.getElementById('fCountry'), bEl = document.getElementById('fBank'), sEl = document.getElementById('fSex');
-  cEl.innerHTML = ''; bEl.innerHTML = ''; sEl.innerHTML = '';
-  Object.keys(byCountry).sort((a, b) => byCountry[b] - byCountry[a]).forEach(k => cEl.appendChild(chip('country', k, tr(COUNTRY, k, k), byCountry[k])));
-  Object.keys(byBank).sort((a, b) => byBank[b] - byBank[a]).forEach(k => bEl.appendChild(chip('bank', k, tr(BANK, k, k), byBank[k])));
-  ['hembra', 'macho', 'hermafrodita'].forEach(k => { if (bySex[k]) sEl.appendChild(chip('sex', k, tr(SEX, k, k), bySex[k])); });
+  const put = (id, rows) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = '';
+    rows.forEach(([dim, k, label, n]) => el.appendChild(chip(dim, k, label, n)));
+  };
+  put('fCountry', Object.keys(byCountry).sort((a, b) => byCountry[b] - byCountry[a]).map(k => ['country', k, tr(COUNTRY, k, k), byCountry[k]]));
+  put('fBank', Object.keys(byBank).sort((a, b) => byBank[b] - byBank[a]).map(k => ['bank', k, tr(BANK, k, k), byBank[k]]));
+  put('fSex', ['hembra', 'macho', 'hermafrodita'].filter(k => bySex[k]).map(k => ['sex', k, tr(SEX, k, k), bySex[k]]));
 }
 function applyLang() {
   document.documentElement.lang = lang;
@@ -412,7 +416,7 @@ function wire() {
 }
 
 function start() {
-  if (started || !mapReady || !dataReady) return;
+  if (started || !dataReady) return;
   started = true;
   applyLang();
 }
